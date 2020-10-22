@@ -9,7 +9,8 @@
   },
   "bin": {
     "dna-to-rna-test": "bin/dna-to-rna.js",
-    "brain-calc": "bin/brain-calc.js"
+    "sum-square-difference": "bin/sum-square-difference.js",
+    "invert-case": "bim/invert-case.js"
   },
   "author": "",
   "license": "ISC",
