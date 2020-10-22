@@ -12,7 +12,8 @@
     "sum-square-difference": "bin/sum-square-difference.js",
     "invert-case": "bin/invert-case.js",
     "diff": "bin/diff.js",
-    "areBracketsBalanced": "bin/are-Brackets-Balanced.js"
+    "areBracketsBalanced": "bin/are-Brackets-Balanced.js",
+    "solution": "bin/solution.js"
   },
   "author": "",
   "license": "ISC",
