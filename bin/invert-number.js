@@ -1,9 +1,11 @@
+// 6. Переворот числа
+
 import promptly from 'promptly';
-import { solution } from '../src/solution.js';
+import { invertNumber } from '../src/invertNumber.js';
 
 const launchGame = async () => {
   const num = await promptly.prompt('Input string ');
-  const result = solution(num);
+  const result = invertNumber(num);
   return console.log(result);
 };
 launchGame();

@@ -1,3 +1,5 @@
+// 2. Сумма квадратов
+
 import promptly from 'promptly';
 import { sumSquareDefference } from '../src/sumSquareDifference.js';
 

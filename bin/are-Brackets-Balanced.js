@@ -1,3 +1,5 @@
+// 5. Сбалансированы ли скобки?
+
 import promptly from 'promptly';
 import { areBracketsBalanced } from '../src/areBracketsBalanced.js';
 

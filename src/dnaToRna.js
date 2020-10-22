@@ -1,3 +1,5 @@
+// 1. Преобразование DNA в RNA
+
 export const dnaToRnaSource = (chainDna) => {
   let i = 0;
   let chainRna = '';

@@ -1,3 +1,5 @@
+// 2. Сумма квадратов
+
 export const sumSquareDefference = (n) => {
   let sumSquare = 0;
   let squareSum = 0;

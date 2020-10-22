@@ -1,3 +1,5 @@
+// 7. Найди Fizz и Buzz
+
 import promptly from 'promptly';
 import { fizzBuzz } from '../src/fizBuzz.js';
 

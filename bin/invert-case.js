@@ -1,3 +1,5 @@
+// 3. Инвертированный регистр
+
 import promptly from 'promptly';
 import { invertCase } from '../src/invertCase.js';
 

@@ -1,3 +1,5 @@
+// 7. Найди Fizz и Buzz
+
 export const fizzBuzz = (beginNum, endNum) => {
   if (beginNum > endNum) {
     return;

@@ -1,3 +1,5 @@
+// Разница углов
+
 import promptly from 'promptly';
 import { diff } from '../src/diff.js';
 

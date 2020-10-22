@@ -1,4 +1,6 @@
-export const solution = (num) => {
+// 6. Переворот числа
+
+export const invertNumber = (num) => {
   let result = '';
   for (let i = 0; i < num.length; i += 1) {
     result += num[num.length - 1 - i];
@@ -6,4 +8,4 @@ export const solution = (num) => {
   return Number(result);
 };
 
-export default { solution };
+export default { invertNumber };
