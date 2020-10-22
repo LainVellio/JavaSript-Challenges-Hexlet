@@ -1,4 +1,4 @@
-// Разница углов
+// 4. Разница углов
 
 export const diff = (firstCorner, secondCorner) => {
   if (firstCorner < 0 || firstCorner > 360 || secondCorner < 0 || secondCorner > 360) {

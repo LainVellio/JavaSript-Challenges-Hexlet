@@ -13,7 +13,8 @@
     "invert-case": "bin/invert-case.js",
     "diff": "bin/diff.js",
     "areBracketsBalanced": "bin/are-Brackets-Balanced.js",
-    "solution": "bin/solution.js"
+    "invert-number": "bin/invert-number.js",
+    "ackermann-function": "bin/ackermann-function.js"
   },
   "author": "",
   "license": "ISC",

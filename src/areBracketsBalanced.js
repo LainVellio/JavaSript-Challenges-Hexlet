@@ -1,3 +1,5 @@
+// 5. Сбалансированы ли скобки?
+
 export const areBracketsBalanced = (str) => {
   if (str.replace(' ', '') === '') {
     return true;
