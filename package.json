@@ -10,7 +10,8 @@
   "bin": {
     "dna-to-rna-test": "bin/dna-to-rna.js",
     "sum-square-difference": "bin/sum-square-difference.js",
-    "invert-case": "bim/invert-case.js"
+    "invert-case": "bin/invert-case.js",
+    "diff": "bin/diff.js"
   },
   "author": "",
   "license": "ISC",
