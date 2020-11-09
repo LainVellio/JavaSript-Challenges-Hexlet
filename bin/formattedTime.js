@@ -1,3 +1,5 @@
+// 9. Форматированное время
+
 import promptly from 'promptly';
 import { formattedTime } from '../src/formattedTime.js';
 

@@ -15,7 +15,8 @@
     "areBracketsBalanced": "bin/are-Brackets-Balanced.js",
     "invert-number": "bin/invert-number.js",
     "ackermann-function": "bin/ackermann-function.js",
-    "formattedTime" : "bin/formattedTime.js"
+    "formattedTime" : "bin/formattedTime.js",
+    "isHappyTicket" : "bin/isHappyTicket.js"
   },
   "author": "",
   "license": "ISC",

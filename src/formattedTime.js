@@ -1,3 +1,5 @@
+// 9. Форматированное время
+
 export const formattedTime = (num) => {
   const numHours = Math.floor((num % 1440) / 60);
   const numMinutes = num % 60;
@@ -10,7 +12,7 @@ export const formattedTime = (num) => {
   if (numMinutes < 10) {
     stringMinutes = `0${numMinutes}`;
   } else { stringMinutes = numMinutes; }
-  console.log(`${stringHours}:${stringMinutes}`);
+  return `${stringHours}:${stringMinutes}`;
 };
 
 export default { formattedTime };
