@@ -14,13 +14,14 @@
     "diff": "bin/diff.js",
     "areBracketsBalanced": "bin/are-Brackets-Balanced.js",
     "invert-number": "bin/invert-number.js",
-    "ackermann-function": "bin/ackermann-function.js"
+    "ackermann-function": "bin/ackermann-function.js",
+    "formattedTime" : "bin/formattedTime.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.11.0",
-    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1"
   },
   "dependencies": {
