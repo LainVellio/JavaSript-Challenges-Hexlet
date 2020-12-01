@@ -3,7 +3,7 @@
 import readlineSync from 'readline-sync';
 import { isHappyTicket } from '../src/isHappyTicket.js';
 
-const launch = async () => {
+const launch = () => {
   const number = readlineSync.question('Input number ');
   const result = isHappyTicket(number);
   return console.log(result);

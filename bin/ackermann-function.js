@@ -3,7 +3,7 @@
 import readlineSync from 'readline-sync';
 import { ackermannFunction } from '../src/ackermannFunction.js';
 
-const launch = async () => {
+const launch = () => {
   const m = readlineSync.question('Input m ');
   const n = readlineSync.question('Input n ');
   const result = ackermannFunction(Number(m), Number(n));

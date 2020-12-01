@@ -18,7 +18,8 @@
     "formatted-Time": "bin/formatted-Time.js",
     "is-Happy-Ticket": "bin/is-Happy-Ticket.js",
     "is-Power-Of-Three": "bin/is-Power-Of-Three.js",
-    "is-Happy-Number.js": "bin/is-Happy-Number.js"
+    "is-Happy-Number.js": "bin/is-Happy-Number.js",
+    "is-Perfect": "bin/is-Perfect.js"
   },
   "author": "",
   "license": "ISC",

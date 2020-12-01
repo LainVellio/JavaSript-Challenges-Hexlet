@@ -3,7 +3,7 @@
 import readlineSync from 'readline-sync';
 import { diff } from '../src/diff.js';
 
-const launch = async () => {
+const launch = () => {
   const firstCorner = readlineSync.question('Input first corner ');
   const secondCorner = readlineSync.question('Input second corner ');
   const result = diff(firstCorner, secondCorner);

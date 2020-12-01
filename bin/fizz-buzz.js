@@ -3,7 +3,7 @@
 import readlineSync from 'readline-sync';
 import { fizzBuzz } from '../src/fizBuzz.js';
 
-const launch = async () => {
+const launch = () => {
   const begin = readlineSync.question('Input begin number ');
   const end = readlineSync.question('Input end number ');
   fizzBuzz(Number(begin), Number(end));
