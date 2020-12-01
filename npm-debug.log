@@ -1,0 +1,2042 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData acorn
+20 silly mapToRegistry name acorn
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/acorn
+24 verbose request uri https://registry.npmjs.org/acorn
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 1:37:53 PM
+27 verbose request id 4b298ed34061ac38
+28 verbose etag W/"2dfcc0d8ec84105928722f5f239a6c8f"
+29 verbose lastModified Mon, 12 Oct 2020 20:17:43 GMT
+30 http request GET https://registry.npmjs.org/acorn
+31 http 304 https://registry.npmjs.org/acorn
+32 verbose headers { date: 'Tue, 01 Dec 2020 10:37:49 GMT',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'set-cookie': [ '__cfduid=d4d5f2435786fbd0d5c08612c567c20461606819069; expires=Thu, 31-Dec-20 10:37:49 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+32 verbose headers   'cf-ray': '5fac2ccf3dc72de7-DME',
+32 verbose headers   age: '5526',
+32 verbose headers   'cache-control': 'public, max-age=300',
+32 verbose headers   etag: '"2dfcc0d8ec84105928722f5f239a6c8f"',
+32 verbose headers   'last-modified': 'Mon, 12 Oct 2020 20:17:43 GMT',
+32 verbose headers   vary: 'Accept-Encoding',
+32 verbose headers   'cf-cache-status': 'HIT',
+32 verbose headers   'cf-request-id': '06bf7a558200002de782bd9000000001',
+32 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+32 verbose headers   server: 'cloudflare' }
+33 silly get cb [ 304,
+33 silly get   { date: 'Tue, 01 Dec 2020 10:37:49 GMT',
+33 silly get     connection: 'keep-alive',
+33 silly get     'set-cookie': [ '__cfduid=d4d5f2435786fbd0d5c08612c567c20461606819069; expires=Thu, 31-Dec-20 10:37:49 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+33 silly get     'cf-ray': '5fac2ccf3dc72de7-DME',
+33 silly get     age: '5526',
+33 silly get     'cache-control': 'public, max-age=300',
+33 silly get     etag: '"2dfcc0d8ec84105928722f5f239a6c8f"',
+33 silly get     'last-modified': 'Mon, 12 Oct 2020 20:17:43 GMT',
+33 silly get     vary: 'Accept-Encoding',
+33 silly get     'cf-cache-status': 'HIT',
+33 silly get     'cf-request-id': '06bf7a558200002de782bd9000000001',
+33 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+33 silly get     server: 'cloudflare' } ]
+34 verbose etag https://registry.npmjs.org/acorn from cache
+35 verbose get saving acorn to /home/vellio/.npm/registry.npmjs.org/acorn/.cache.json
+36 silly resolveWithNewModule acorn@7.4.1 checking installable status
+37 silly cache add args [ 'acorn@^7.4.0', null ]
+38 verbose cache add spec acorn@^7.4.0
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'acorn@^7.4.0',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'acorn',
+39 silly cache add   rawSpec: '^7.4.0',
+39 silly cache add   spec: '>=7.4.0 <8.0.0',
+39 silly cache add   type: 'range' }
+40 silly addNamed acorn@>=7.4.0 <8.0.0
+41 verbose addNamed ">=7.4.0 <8.0.0" is a valid semver range for acorn
+42 silly addNameRange { name: 'acorn', range: '>=7.4.0 <8.0.0', hasData: false }
+43 silly mapToRegistry name acorn
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/acorn
+47 verbose addNameRange registry:https://registry.npmjs.org/acorn not in flight; fetching
+48 verbose get https://registry.npmjs.org/acorn not expired, no request
+49 silly addNameRange number 2 { name: 'acorn', range: '>=7.4.0 <8.0.0', hasData: true }
+50 silly addNameRange versions [ 'acorn',
+50 silly addNameRange   [ '0.0.1',
+50 silly addNameRange     '0.1.0',
+50 silly addNameRange     '0.2.0',
+50 silly addNameRange     '0.3.0',
+50 silly addNameRange     '0.3.1',
+50 silly addNameRange     '0.4.0',
+50 silly addNameRange     '0.4.2',
+50 silly addNameRange     '0.5.0',
+50 silly addNameRange     '0.6.0',
+50 silly addNameRange     '0.7.0',
+50 silly addNameRange     '0.8.0',
+50 silly addNameRange     '0.9.0',
+50 silly addNameRange     '0.10.0',
+50 silly addNameRange     '0.11.0',
+50 silly addNameRange     '0.12.0',
+50 silly addNameRange     '1.0.0',
+50 silly addNameRange     '1.0.1',
+50 silly addNameRange     '1.0.3',
+50 silly addNameRange     '1.1.0',
+50 silly addNameRange     '1.2.0',
+50 silly addNameRange     '2.0.0',
+50 silly addNameRange     '1.2.1',
+50 silly addNameRange     '2.0.1',
+50 silly addNameRange     '1.2.2',
+50 silly addNameRange     '2.0.4',
+50 silly addNameRange     '2.1.0',
+50 silly addNameRange     '2.2.0',
+50 silly addNameRange     '2.3.0',
+50 silly addNameRange     '2.4.0',
+50 silly addNameRange     '2.5.0',
+50 silly addNameRange     '2.5.2',
+50 silly addNameRange     '2.6.0',
+50 silly addNameRange     '2.6.2',
+50 silly addNameRange     '2.6.4',
+50 silly addNameRange     '2.7.0',
+50 silly addNameRange     '3.0.0',
+50 silly addNameRange     '3.0.2',
+50 silly addNameRange     '3.0.4',
+50 silly addNameRange     '3.1.0',
+50 silly addNameRange     '3.2.0',
+50 silly addNameRange     '3.3.0',
+50 silly addNameRange     '4.0.0',
+50 silly addNameRange     '4.0.1',
+50 silly addNameRange     '4.0.2',
+50 silly addNameRange     '4.0.3',
+50 silly addNameRange     '4.0.4',
+50 silly addNameRange     '4.0.5',
+50 silly addNameRange     '4.0.6',
+50 silly addNameRange     '4.0.7',
+50 silly addNameRange     '4.0.8',
+50 silly addNameRange     '4.0.9',
+50 silly addNameRange     '4.0.10',
+50 silly addNameRange     '4.0.11',
+50 silly addNameRange     '5.0.0',
+50 silly addNameRange     '5.0.1',
+50 silly addNameRange     '5.0.2',
+50 silly addNameRange     '5.0.3',
+50 silly addNameRange     '4.0.13',
+50 silly addNameRange     '5.1.0',
+50 silly addNameRange     '5.1.1',
+50 silly addNameRange     '5.1.2',
+50 silly addNameRange     '5.2.0',
+50 silly addNameRange     '5.2.1',
+50 silly addNameRange     '5.3.0',
+50 silly addNameRange     '5.4.0',
+50 silly addNameRange     '5.4.1',
+50 silly addNameRange     '5.5.0',
+50 silly addNameRange     '5.5.1',
+50 silly addNameRange     '5.5.2',
+50 silly addNameRange     '5.5.3',
+50 silly addNameRange     '5.6.0',
+50 silly addNameRange     '5.6.1',
+50 silly addNameRange     '5.6.2',
+50 silly addNameRange     '5.7.0',
+50 silly addNameRange     '5.7.1',
+50 silly addNameRange     '5.7.2',
+50 silly addNameRange     '5.7.3',
+50 silly addNameRange     '6.0.0',
+50 silly addNameRange     '6.0.1',
+50 silly addNameRange     '6.0.2',
+50 silly addNameRange     '6.0.3',
+50 silly addNameRange     '6.0.4',
+50 silly addNameRange     '6.0.5',
+50 silly addNameRange     '6.0.6',
+50 silly addNameRange     '6.0.7',
+50 silly addNameRange     '6.1.0',
+50 silly addNameRange     '6.1.1',
+50 silly addNameRange     '6.2.0',
+50 silly addNameRange     '6.2.1',
+50 silly addNameRange     '6.3.0',
+50 silly addNameRange     '7.0.0',
+50 silly addNameRange     '7.1.0',
+50 silly addNameRange     '6.4.0',
+50 silly addNameRange     '7.1.1',
+50 silly addNameRange     '6.4.1',
+50 silly addNameRange     '5.7.4',
+50 silly addNameRange     '7.2.0',
+50 silly addNameRange     '7.3.0',
+50 silly addNameRange     '7.3.1',
+50 silly addNameRange     '7.4.0',
+50 silly addNameRange     '8.0.0',
+50 silly addNameRange     '8.0.1',
+50 silly addNameRange     '8.0.2',
+50 silly addNameRange     '8.0.3',
+50 silly addNameRange     '8.0.4',
+50 silly addNameRange     '7.4.1',
+50 silly addNameRange     '6.4.2' ] ]
+51 silly addNamed acorn@7.4.1
+52 verbose addNamed "7.4.1" is a plain semver version for acorn
+53 silly cache afterAdd acorn@7.4.1
+54 verbose afterAdd /home/vellio/.npm/acorn/7.4.1/package/package.json not in flight; writing
+55 verbose afterAdd /home/vellio/.npm/acorn/7.4.1/package/package.json written
+56 silly fetchNamedPackageData debug
+57 silly mapToRegistry name debug
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry https://registry.npmjs.org/
+60 silly mapToRegistry uri https://registry.npmjs.org/debug
+61 silly fetchNamedPackageData doctrine
+62 silly mapToRegistry name doctrine
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry uri https://registry.npmjs.org/doctrine
+66 verbose request uri https://registry.npmjs.org/doctrine
+67 verbose request no auth needed
+68 info attempt registry request try #1 at 1:37:53 PM
+69 verbose etag W/"24fd0d2323ad4b65f1df335dc74d3963"
+70 verbose lastModified Tue, 14 Jul 2020 20:17:25 GMT
+71 http request GET https://registry.npmjs.org/doctrine
+72 verbose request uri https://registry.npmjs.org/debug
+73 verbose request no auth needed
+74 info attempt registry request try #1 at 1:37:54 PM
+75 verbose etag W/"0725af524952557a4784bbc2edb4e319"
+76 verbose lastModified Sat, 28 Nov 2020 12:29:14 GMT
+77 http request GET https://registry.npmjs.org/debug
+78 http 304 https://registry.npmjs.org/debug
+79 verbose headers { date: 'Tue, 01 Dec 2020 10:37:49 GMT',
+79 verbose headers   connection: 'keep-alive',
+79 verbose headers   'set-cookie': [ '__cfduid=d478e21216878cf697a0349f94c696bd31606819069; expires=Thu, 31-Dec-20 10:37:49 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+79 verbose headers   'cf-ray': '5fac2cd228768f4f-DME',
+79 verbose headers   age: '2324',
+79 verbose headers   'cache-control': 'public, max-age=300',
+79 verbose headers   etag: '"0725af524952557a4784bbc2edb4e319"',
+79 verbose headers   'last-modified': 'Sat, 28 Nov 2020 12:29:14 GMT',
+79 verbose headers   vary: 'Accept-Encoding',
+79 verbose headers   'cf-cache-status': 'HIT',
+79 verbose headers   'cf-request-id': '06bf7a575a00008f4fe49ef000000001',
+79 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+79 verbose headers   server: 'cloudflare' }
+80 silly get cb [ 304,
+80 silly get   { date: 'Tue, 01 Dec 2020 10:37:49 GMT',
+80 silly get     connection: 'keep-alive',
+80 silly get     'set-cookie': [ '__cfduid=d478e21216878cf697a0349f94c696bd31606819069; expires=Thu, 31-Dec-20 10:37:49 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+80 silly get     'cf-ray': '5fac2cd228768f4f-DME',
+80 silly get     age: '2324',
+80 silly get     'cache-control': 'public, max-age=300',
+80 silly get     etag: '"0725af524952557a4784bbc2edb4e319"',
+80 silly get     'last-modified': 'Sat, 28 Nov 2020 12:29:14 GMT',
+80 silly get     vary: 'Accept-Encoding',
+80 silly get     'cf-cache-status': 'HIT',
+80 silly get     'cf-request-id': '06bf7a575a00008f4fe49ef000000001',
+80 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+80 silly get     server: 'cloudflare' } ]
+81 verbose etag https://registry.npmjs.org/debug from cache
+82 verbose get saving debug to /home/vellio/.npm/registry.npmjs.org/debug/.cache.json
+83 http 304 https://registry.npmjs.org/doctrine
+84 verbose headers { date: 'Tue, 01 Dec 2020 10:37:49 GMT',
+84 verbose headers   connection: 'keep-alive',
+84 verbose headers   'set-cookie': [ '__cfduid=d2a2ddace4c773d8aaf9fa42199ac36c91606819069; expires=Thu, 31-Dec-20 10:37:49 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+84 verbose headers   'cf-ray': '5fac2cd22f737a69-DME',
+84 verbose headers   age: '3394',
+84 verbose headers   'cache-control': 'public, max-age=300',
+84 verbose headers   etag: '"24fd0d2323ad4b65f1df335dc74d3963"',
+84 verbose headers   'last-modified': 'Tue, 14 Jul 2020 20:17:25 GMT',
+84 verbose headers   vary: 'Accept-Encoding',
+84 verbose headers   'cf-cache-status': 'HIT',
+84 verbose headers   'cf-request-id': '06bf7a575b00007a69e897c000000001',
+84 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+84 verbose headers   server: 'cloudflare' }
+85 silly get cb [ 304,
+85 silly get   { date: 'Tue, 01 Dec 2020 10:37:49 GMT',
+85 silly get     connection: 'keep-alive',
+85 silly get     'set-cookie': [ '__cfduid=d2a2ddace4c773d8aaf9fa42199ac36c91606819069; expires=Thu, 31-Dec-20 10:37:49 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+85 silly get     'cf-ray': '5fac2cd22f737a69-DME',
+85 silly get     age: '3394',
+85 silly get     'cache-control': 'public, max-age=300',
+85 silly get     etag: '"24fd0d2323ad4b65f1df335dc74d3963"',
+85 silly get     'last-modified': 'Tue, 14 Jul 2020 20:17:25 GMT',
+85 silly get     vary: 'Accept-Encoding',
+85 silly get     'cf-cache-status': 'HIT',
+85 silly get     'cf-request-id': '06bf7a575b00007a69e897c000000001',
+85 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+85 silly get     server: 'cloudflare' } ]
+86 verbose etag https://registry.npmjs.org/doctrine from cache
+87 verbose get saving doctrine to /home/vellio/.npm/registry.npmjs.org/doctrine/.cache.json
+88 silly resolveWithNewModule doctrine@1.5.0 checking installable status
+89 silly cache add args [ 'doctrine@1.5.0', null ]
+90 verbose cache add spec doctrine@1.5.0
+91 silly cache add parsed spec Result {
+91 silly cache add   raw: 'doctrine@1.5.0',
+91 silly cache add   scope: null,
+91 silly cache add   name: 'doctrine',
+91 silly cache add   rawSpec: '1.5.0',
+91 silly cache add   spec: '1.5.0',
+91 silly cache add   type: 'version' }
+92 silly addNamed doctrine@1.5.0
+93 verbose addNamed "1.5.0" is a plain semver version for doctrine
+94 silly mapToRegistry name doctrine
+95 silly mapToRegistry using default registry
+96 silly mapToRegistry registry https://registry.npmjs.org/
+97 silly mapToRegistry uri https://registry.npmjs.org/doctrine
+98 verbose addNameVersion registry:https://registry.npmjs.org/doctrine not in flight; fetching
+99 silly resolveWithNewModule debug@2.6.9 checking installable status
+100 silly cache add args [ 'debug@^2.6.9', null ]
+101 verbose cache add spec debug@^2.6.9
+102 silly cache add parsed spec Result {
+102 silly cache add   raw: 'debug@^2.6.9',
+102 silly cache add   scope: null,
+102 silly cache add   name: 'debug',
+102 silly cache add   rawSpec: '^2.6.9',
+102 silly cache add   spec: '>=2.6.9 <3.0.0',
+102 silly cache add   type: 'range' }
+103 silly addNamed debug@>=2.6.9 <3.0.0
+104 verbose addNamed ">=2.6.9 <3.0.0" is a valid semver range for debug
+105 silly addNameRange { name: 'debug', range: '>=2.6.9 <3.0.0', hasData: false }
+106 silly mapToRegistry name debug
+107 silly mapToRegistry using default registry
+108 silly mapToRegistry registry https://registry.npmjs.org/
+109 silly mapToRegistry uri https://registry.npmjs.org/debug
+110 verbose addNameRange registry:https://registry.npmjs.org/debug not in flight; fetching
+111 verbose get https://registry.npmjs.org/doctrine not expired, no request
+112 verbose get https://registry.npmjs.org/debug not expired, no request
+113 silly addNameRange number 2 { name: 'debug', range: '>=2.6.9 <3.0.0', hasData: true }
+114 silly addNameRange versions [ 'debug',
+114 silly addNameRange   [ '0.0.1',
+114 silly addNameRange     '0.1.0',
+114 silly addNameRange     '0.2.0',
+114 silly addNameRange     '0.3.0',
+114 silly addNameRange     '0.4.0',
+114 silly addNameRange     '0.4.1',
+114 silly addNameRange     '0.5.0',
+114 silly addNameRange     '0.6.0',
+114 silly addNameRange     '0.7.0',
+114 silly addNameRange     '0.7.1',
+114 silly addNameRange     '0.7.2',
+114 silly addNameRange     '0.7.3',
+114 silly addNameRange     '0.7.4',
+114 silly addNameRange     '0.8.0',
+114 silly addNameRange     '0.8.1',
+114 silly addNameRange     '1.0.0',
+114 silly addNameRange     '1.0.1',
+114 silly addNameRange     '1.0.2',
+114 silly addNameRange     '1.0.3',
+114 silly addNameRange     '1.0.4',
+114 silly addNameRange     '2.0.0',
+114 silly addNameRange     '2.1.0',
+114 silly addNameRange     '2.1.1',
+114 silly addNameRange     '2.1.2',
+114 silly addNameRange     '2.1.3',
+114 silly addNameRange     '2.2.0',
+114 silly addNameRange     '2.3.0',
+114 silly addNameRange     '2.3.1',
+114 silly addNameRange     '2.3.2',
+114 silly addNameRange     '2.3.3',
+114 silly addNameRange     '2.4.0',
+114 silly addNameRange     '2.4.1',
+114 silly addNameRange     '2.4.2',
+114 silly addNameRange     '2.4.3',
+114 silly addNameRange     '2.4.4',
+114 silly addNameRange     '2.4.5',
+114 silly addNameRange     '2.5.0',
+114 silly addNameRange     '2.5.1',
+114 silly addNameRange     '2.5.2',
+114 silly addNameRange     '2.6.0',
+114 silly addNameRange     '2.6.1',
+114 silly addNameRange     '2.6.2',
+114 silly addNameRange     '2.6.3',
+114 silly addNameRange     '2.6.4',
+114 silly addNameRange     '2.6.5',
+114 silly addNameRange     '2.6.6',
+114 silly addNameRange     '2.6.7',
+114 silly addNameRange     '2.6.8',
+114 silly addNameRange     '1.0.5',
+114 silly addNameRange     '3.0.0',
+114 silly addNameRange     '3.0.1',
+114 silly addNameRange     '2.6.9',
+114 silly addNameRange     '3.1.0',
+114 silly addNameRange     '3.2.0',
+114 silly addNameRange     '3.2.1',
+114 silly addNameRange     '3.2.2',
+114 silly addNameRange     '3.2.3',
+114 silly addNameRange     '4.0.0',
+114 silly addNameRange     '3.2.4',
+114 silly addNameRange     '3.2.5',
+114 silly addNameRange     '4.0.1',
+114 silly addNameRange     '4.1.0',
+114 silly addNameRange     '3.2.6',
+114 silly addNameRange     '4.1.1',
+114 silly addNameRange     '4.2.0',
+114 silly addNameRange     '4.3.0',
+114 silly addNameRange     '4.3.1',
+114 silly addNameRange     '3.2.7' ] ]
+115 silly addNamed debug@2.6.9
+116 verbose addNamed "2.6.9" is a plain semver version for debug
+117 silly cache afterAdd doctrine@1.5.0
+118 verbose afterAdd /home/vellio/.npm/doctrine/1.5.0/package/package.json not in flight; writing
+119 silly cache afterAdd debug@2.6.9
+120 verbose afterAdd /home/vellio/.npm/debug/2.6.9/package/package.json not in flight; writing
+121 verbose afterAdd /home/vellio/.npm/doctrine/1.5.0/package/package.json written
+122 verbose afterAdd /home/vellio/.npm/debug/2.6.9/package/package.json written
+123 silly fetchNamedPackageData ms
+124 silly mapToRegistry name ms
+125 silly mapToRegistry using default registry
+126 silly mapToRegistry registry https://registry.npmjs.org/
+127 silly mapToRegistry uri https://registry.npmjs.org/ms
+128 verbose request uri https://registry.npmjs.org/ms
+129 verbose request no auth needed
+130 info attempt registry request try #1 at 1:37:54 PM
+131 verbose etag W/"9a127694accfd3b749cac16254a12a53"
+132 verbose lastModified Tue, 03 Nov 2020 02:15:57 GMT
+133 http request GET https://registry.npmjs.org/ms
+134 http 304 https://registry.npmjs.org/ms
+135 verbose headers { date: 'Tue, 01 Dec 2020 10:37:49 GMT',
+135 verbose headers   connection: 'keep-alive',
+135 verbose headers   'set-cookie': [ '__cfduid=d8a030b5a93089e57640495a935039bae1606819069; expires=Thu, 31-Dec-20 10:37:49 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+135 verbose headers   'cf-ray': '5fac2cd33b697b57-DME',
+135 verbose headers   age: '6184',
+135 verbose headers   'cache-control': 'public, max-age=300',
+135 verbose headers   etag: '"9a127694accfd3b749cac16254a12a53"',
+135 verbose headers   'last-modified': 'Tue, 03 Nov 2020 02:15:57 GMT',
+135 verbose headers   vary: 'Accept-Encoding',
+135 verbose headers   'cf-cache-status': 'HIT',
+135 verbose headers   'cf-request-id': '06bf7a57fe00007b575a2f1000000001',
+135 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+135 verbose headers   server: 'cloudflare' }
+136 silly get cb [ 304,
+136 silly get   { date: 'Tue, 01 Dec 2020 10:37:49 GMT',
+136 silly get     connection: 'keep-alive',
+136 silly get     'set-cookie': [ '__cfduid=d8a030b5a93089e57640495a935039bae1606819069; expires=Thu, 31-Dec-20 10:37:49 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+136 silly get     'cf-ray': '5fac2cd33b697b57-DME',
+136 silly get     age: '6184',
+136 silly get     'cache-control': 'public, max-age=300',
+136 silly get     etag: '"9a127694accfd3b749cac16254a12a53"',
+136 silly get     'last-modified': 'Tue, 03 Nov 2020 02:15:57 GMT',
+136 silly get     vary: 'Accept-Encoding',
+136 silly get     'cf-cache-status': 'HIT',
+136 silly get     'cf-request-id': '06bf7a57fe00007b575a2f1000000001',
+136 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+136 silly get     server: 'cloudflare' } ]
+137 verbose etag https://registry.npmjs.org/ms from cache
+138 verbose get saving ms to /home/vellio/.npm/registry.npmjs.org/ms/.cache.json
+139 silly resolveWithNewModule ms@2.0.0 checking installable status
+140 silly cache add args [ 'ms@2.0.0', null ]
+141 verbose cache add spec ms@2.0.0
+142 silly cache add parsed spec Result {
+142 silly cache add   raw: 'ms@2.0.0',
+142 silly cache add   scope: null,
+142 silly cache add   name: 'ms',
+142 silly cache add   rawSpec: '2.0.0',
+142 silly cache add   spec: '2.0.0',
+142 silly cache add   type: 'version' }
+143 silly addNamed ms@2.0.0
+144 verbose addNamed "2.0.0" is a plain semver version for ms
+145 silly mapToRegistry name ms
+146 silly mapToRegistry using default registry
+147 silly mapToRegistry registry https://registry.npmjs.org/
+148 silly mapToRegistry uri https://registry.npmjs.org/ms
+149 verbose addNameVersion registry:https://registry.npmjs.org/ms not in flight; fetching
+150 verbose get https://registry.npmjs.org/ms not expired, no request
+151 silly cache afterAdd ms@2.0.0
+152 verbose afterAdd /home/vellio/.npm/ms/2.0.0/package/package.json not in flight; writing
+153 verbose afterAdd /home/vellio/.npm/ms/2.0.0/package/package.json written
+154 silly loadAllDepsIntoIdealTree Finishing
+155 silly idealTree:prePrune hexlet-challenges@1.0.0
+155 silly idealTree:prePrune ├── @babel/code-frame@7.10.4
+155 silly idealTree:prePrune ├── @babel/helper-validator-identifier@7.10.4
+155 silly idealTree:prePrune ├─┬ @babel/highlight@7.10.4
+155 silly idealTree:prePrune │ └── chalk@2.4.2
+155 silly idealTree:prePrune ├── @eslint/eslintrc@0.2.1
+155 silly idealTree:prePrune ├── @types/json5@0.0.29
+155 silly idealTree:prePrune ├── acorn-jsx@5.3.1
+155 silly idealTree:prePrune ├── acorn@7.4.1
+155 silly idealTree:prePrune ├── ajv@6.12.6
+155 silly idealTree:prePrune ├── ansi-colors@4.1.1
+155 silly idealTree:prePrune ├── ansi-regex@5.0.0
+155 silly idealTree:prePrune ├── ansi-styles@3.2.1
+155 silly idealTree:prePrune ├── argparse@1.0.10
+155 silly idealTree:prePrune ├── array-includes@3.1.1
+155 silly idealTree:prePrune ├── array.prototype.flat@1.2.3
+155 silly idealTree:prePrune ├── astral-regex@1.0.0
+155 silly idealTree:prePrune ├── balanced-match@1.0.0
+155 silly idealTree:prePrune ├── brace-expansion@1.1.11
+155 silly idealTree:prePrune ├── call-bind@1.0.0
+155 silly idealTree:prePrune ├── callsites@3.1.0
+155 silly idealTree:prePrune ├─┬ chalk@4.1.0
+155 silly idealTree:prePrune │ ├── ansi-styles@4.3.0
+155 silly idealTree:prePrune │ ├── color-convert@2.0.1
+155 silly idealTree:prePrune │ ├── color-name@1.1.4
+155 silly idealTree:prePrune │ ├── has-flag@4.0.0
+155 silly idealTree:prePrune │ └── supports-color@7.2.0
+155 silly idealTree:prePrune ├── color-convert@1.9.3
+155 silly idealTree:prePrune ├── color-name@1.1.3
+155 silly idealTree:prePrune ├── concat-map@0.0.1
+155 silly idealTree:prePrune ├── confusing-browser-globals@1.0.10
+155 silly idealTree:prePrune ├── contains-path@0.1.0
+155 silly idealTree:prePrune ├── cross-spawn@7.0.3
+155 silly idealTree:prePrune ├── debug@4.2.0
+155 silly idealTree:prePrune ├── deep-is@0.1.3
+155 silly idealTree:prePrune ├── define-properties@1.1.3
+155 silly idealTree:prePrune ├── doctrine@3.0.0
+155 silly idealTree:prePrune ├── emoji-regex@7.0.3
+155 silly idealTree:prePrune ├── enquirer@2.3.6
+155 silly idealTree:prePrune ├── error-ex@1.3.2
+155 silly idealTree:prePrune ├── es-abstract@1.17.7
+155 silly idealTree:prePrune ├── es-to-primitive@1.2.1
+155 silly idealTree:prePrune ├── escape-string-regexp@1.0.5
+155 silly idealTree:prePrune ├── eslint-config-airbnb-base@14.2.1
+155 silly idealTree:prePrune ├─┬ eslint-import-resolver-node@0.3.4
+155 silly idealTree:prePrune │ ├── debug@2.6.9
+155 silly idealTree:prePrune │ └── ms@2.0.0
+155 silly idealTree:prePrune ├─┬ eslint-module-utils@2.6.0
+155 silly idealTree:prePrune │ ├── debug@2.6.9
+155 silly idealTree:prePrune │ └── ms@2.0.0
+155 silly idealTree:prePrune ├─┬ eslint-plugin-import@2.22.1
+155 silly idealTree:prePrune │ ├── debug@2.6.9
+155 silly idealTree:prePrune │ ├── doctrine@1.5.0
+155 silly idealTree:prePrune │ └── ms@2.0.0
+155 silly idealTree:prePrune ├── eslint-scope@5.1.1
+155 silly idealTree:prePrune ├─┬ eslint-utils@2.1.0
+155 silly idealTree:prePrune │ └── eslint-visitor-keys@1.3.0
+155 silly idealTree:prePrune ├── eslint-visitor-keys@2.0.0
+155 silly idealTree:prePrune ├── eslint@7.13.0
+155 silly idealTree:prePrune ├─┬ espree@7.3.0
+155 silly idealTree:prePrune │ └── eslint-visitor-keys@1.3.0
+155 silly idealTree:prePrune ├── esprima@4.0.1
+155 silly idealTree:prePrune ├─┬ esquery@1.3.1
+155 silly idealTree:prePrune │ └── estraverse@5.2.0
+155 silly idealTree:prePrune ├─┬ esrecurse@4.3.0
+155 silly idealTree:prePrune │ └── estraverse@5.2.0
+155 silly idealTree:prePrune ├── estraverse@4.3.0
+155 silly idealTree:prePrune ├── esutils@2.0.3
+155 silly idealTree:prePrune ├── fast-deep-equal@3.1.3
+155 silly idealTree:prePrune ├── fast-json-stable-stringify@2.1.0
+155 silly idealTree:prePrune ├── fast-levenshtein@2.0.6
+155 silly idealTree:prePrune ├── file-entry-cache@5.0.1
+155 silly idealTree:prePrune ├── find-up@2.1.0
+155 silly idealTree:prePrune ├── flat-cache@2.0.1
+155 silly idealTree:prePrune ├── flatted@2.0.2
+155 silly idealTree:prePrune ├── fs.realpath@1.0.0
+155 silly idealTree:prePrune ├── function-bind@1.1.1
+155 silly idealTree:prePrune ├── functional-red-black-tree@1.0.1
+155 silly idealTree:prePrune ├── get-intrinsic@1.0.1
+155 silly idealTree:prePrune ├── glob-parent@5.1.1
+155 silly idealTree:prePrune ├── glob@7.1.6
+155 silly idealTree:prePrune ├── globals@12.4.0
+155 silly idealTree:prePrune ├── graceful-fs@4.2.4
+155 silly idealTree:prePrune ├── has-flag@3.0.0
+155 silly idealTree:prePrune ├── has-symbols@1.0.1
+155 silly idealTree:prePrune ├── has@1.0.3
+155 silly idealTree:prePrune ├── hosted-git-info@2.8.8
+155 silly idealTree:prePrune ├── ignore@4.0.6
+155 silly idealTree:prePrune ├── import-fresh@3.2.2
+155 silly idealTree:prePrune ├── imurmurhash@0.1.4
+155 silly idealTree:prePrune ├── inflight@1.0.6
+155 silly idealTree:prePrune ├── inherits@2.0.4
+155 silly idealTree:prePrune ├── is-arrayish@0.2.1
+155 silly idealTree:prePrune ├── is-callable@1.2.2
+155 silly idealTree:prePrune ├── is-core-module@2.1.0
+155 silly idealTree:prePrune ├── is-date-object@1.0.2
+155 silly idealTree:prePrune ├── is-extglob@2.1.1
+155 silly idealTree:prePrune ├── is-fullwidth-code-point@2.0.0
+155 silly idealTree:prePrune ├── is-glob@4.0.1
+155 silly idealTree:prePrune ├── is-negative-zero@2.0.0
+155 silly idealTree:prePrune ├── is-regex@1.1.1
+155 silly idealTree:prePrune ├── is-string@1.0.5
+155 silly idealTree:prePrune ├── is-symbol@1.0.3
+155 silly idealTree:prePrune ├── isarray@1.0.0
+155 silly idealTree:prePrune ├── isexe@2.0.0
+155 silly idealTree:prePrune ├── js-tokens@4.0.0
+155 silly idealTree:prePrune ├── js-yaml@3.14.0
+155 silly idealTree:prePrune ├── json-schema-traverse@0.4.1
+155 silly idealTree:prePrune ├── json-stable-stringify-without-jsonify@1.0.1
+155 silly idealTree:prePrune ├── json5@1.0.1
+155 silly idealTree:prePrune ├── levn@0.4.1
+155 silly idealTree:prePrune ├── load-json-file@2.0.0
+155 silly idealTree:prePrune ├── locate-path@2.0.0
+155 silly idealTree:prePrune ├── lodash@4.17.20
+155 silly idealTree:prePrune ├── minimatch@3.0.4
+155 silly idealTree:prePrune ├── minimist@1.2.5
+155 silly idealTree:prePrune ├── mkdirp@0.5.5
+155 silly idealTree:prePrune ├── ms@2.1.2
+155 silly idealTree:prePrune ├── mute-stream@0.0.8
+155 silly idealTree:prePrune ├── natural-compare@1.4.0
+155 silly idealTree:prePrune ├─┬ normalize-package-data@2.5.0
+155 silly idealTree:prePrune │ └── semver@5.7.1
+155 silly idealTree:prePrune ├── object-inspect@1.8.0
+155 silly idealTree:prePrune ├── object-keys@1.1.1
+155 silly idealTree:prePrune ├── object.assign@4.1.2
+155 silly idealTree:prePrune ├── object.entries@1.1.2
+155 silly idealTree:prePrune ├── object.values@1.1.1
+155 silly idealTree:prePrune ├── once@1.4.0
+155 silly idealTree:prePrune ├── optionator@0.9.1
+155 silly idealTree:prePrune ├── p-limit@1.3.0
+155 silly idealTree:prePrune ├── p-locate@2.0.0
+155 silly idealTree:prePrune ├── p-try@1.0.0
+155 silly idealTree:prePrune ├── parent-module@1.0.1
+155 silly idealTree:prePrune ├── parse-json@2.2.0
+155 silly idealTree:prePrune ├── path-exists@3.0.0
+155 silly idealTree:prePrune ├── path-is-absolute@1.0.1
+155 silly idealTree:prePrune ├── path-key@3.1.1
+155 silly idealTree:prePrune ├── path-parse@1.0.6
+155 silly idealTree:prePrune ├── path-type@2.0.0
+155 silly idealTree:prePrune ├── pify@2.3.0
+155 silly idealTree:prePrune ├── pkg-dir@2.0.0
+155 silly idealTree:prePrune ├── prelude-ls@1.2.1
+155 silly idealTree:prePrune ├── progress@2.0.3
+155 silly idealTree:prePrune ├── promptly@3.2.0
+155 silly idealTree:prePrune ├── punycode@2.1.1
+155 silly idealTree:prePrune ├── read-pkg-up@2.0.0
+155 silly idealTree:prePrune ├── read-pkg@2.0.0
+155 silly idealTree:prePrune ├── read@1.0.7
+155 silly idealTree:prePrune ├── regexpp@3.1.0
+155 silly idealTree:prePrune ├── resolve-from@4.0.0
+155 silly idealTree:prePrune ├── resolve@1.18.1
+155 silly idealTree:prePrune ├── rimraf@2.6.3
+155 silly idealTree:prePrune ├── semver@7.3.2
+155 silly idealTree:prePrune ├── shebang-command@2.0.0
+155 silly idealTree:prePrune ├── shebang-regex@3.0.0
+155 silly idealTree:prePrune ├── slice-ansi@2.1.0
+155 silly idealTree:prePrune ├── spdx-correct@3.1.1
+155 silly idealTree:prePrune ├── spdx-exceptions@2.3.0
+155 silly idealTree:prePrune ├── spdx-expression-parse@3.0.1
+155 silly idealTree:prePrune ├── spdx-license-ids@3.0.6
+155 silly idealTree:prePrune ├── sprintf-js@1.0.3
+155 silly idealTree:prePrune ├─┬ string-width@3.1.0
+155 silly idealTree:prePrune │ ├── ansi-regex@4.1.0
+155 silly idealTree:prePrune │ └── strip-ansi@5.2.0
+155 silly idealTree:prePrune ├─┬ string.prototype.trimend@1.0.2
+155 silly idealTree:prePrune │ └── es-abstract@1.18.0-next.1
+155 silly idealTree:prePrune ├─┬ string.prototype.trimstart@1.0.2
+155 silly idealTree:prePrune │ └── es-abstract@1.18.0-next.1
+155 silly idealTree:prePrune ├── strip-ansi@6.0.0
+155 silly idealTree:prePrune ├── strip-bom@3.0.0
+155 silly idealTree:prePrune ├── strip-json-comments@3.1.1
+155 silly idealTree:prePrune ├── supports-color@5.5.0
+155 silly idealTree:prePrune ├── table@5.4.6
+155 silly idealTree:prePrune ├── text-table@0.2.0
+155 silly idealTree:prePrune ├── tsconfig-paths@3.9.0
+155 silly idealTree:prePrune ├── type-check@0.4.0
+155 silly idealTree:prePrune ├── type-fest@0.8.1
+155 silly idealTree:prePrune ├── uri-js@4.4.0
+155 silly idealTree:prePrune ├── v8-compile-cache@2.2.0
+155 silly idealTree:prePrune ├── validate-npm-package-license@3.0.4
+155 silly idealTree:prePrune ├── which@2.0.2
+155 silly idealTree:prePrune ├── word-wrap@1.2.3
+155 silly idealTree:prePrune ├── wrappy@1.0.2
+155 silly idealTree:prePrune └── write@1.0.3
+156 silly loadIdealTree Finishing
+157 silly currentTree hexlet-challenges@1.0.0
+157 silly currentTree ├── @babel/code-frame@7.10.4
+157 silly currentTree ├── @babel/helper-validator-identifier@7.10.4
+157 silly currentTree ├─┬ @babel/highlight@7.10.4
+157 silly currentTree │ └── chalk@2.4.2
+157 silly currentTree ├── @eslint/eslintrc@0.2.1
+157 silly currentTree ├── @types/json5@0.0.29
+157 silly currentTree ├── acorn-jsx@5.3.1
+157 silly currentTree ├── ajv@6.12.6
+157 silly currentTree ├── ansi-colors@4.1.1
+157 silly currentTree ├── ansi-regex@5.0.0
+157 silly currentTree ├── ansi-styles@3.2.1
+157 silly currentTree ├── argparse@1.0.10
+157 silly currentTree ├── array-includes@3.1.1
+157 silly currentTree ├── array.prototype.flat@1.2.3
+157 silly currentTree ├── astral-regex@1.0.0
+157 silly currentTree ├── balanced-match@1.0.0
+157 silly currentTree ├── brace-expansion@1.1.11
+157 silly currentTree ├── call-bind@1.0.0
+157 silly currentTree ├── callsites@3.1.0
+157 silly currentTree ├─┬ chalk@4.1.0
+157 silly currentTree │ ├── ansi-styles@4.3.0
+157 silly currentTree │ ├── color-convert@2.0.1
+157 silly currentTree │ ├── color-name@1.1.4
+157 silly currentTree │ ├── has-flag@4.0.0
+157 silly currentTree │ └── supports-color@7.2.0
+157 silly currentTree ├── color-convert@1.9.3
+157 silly currentTree ├── color-name@1.1.3
+157 silly currentTree ├── concat-map@0.0.1
+157 silly currentTree ├── confusing-browser-globals@1.0.10
+157 silly currentTree ├── contains-path@0.1.0
+157 silly currentTree ├── cross-spawn@7.0.3
+157 silly currentTree ├── debug@4.2.0
+157 silly currentTree ├── deep-is@0.1.3
+157 silly currentTree ├── define-properties@1.1.3
+157 silly currentTree ├── doctrine@3.0.0
+157 silly currentTree ├── emoji-regex@7.0.3
+157 silly currentTree ├── enquirer@2.3.6
+157 silly currentTree ├── error-ex@1.3.2
+157 silly currentTree ├── es-abstract@1.17.7
+157 silly currentTree ├── es-to-primitive@1.2.1
+157 silly currentTree ├── escape-string-regexp@1.0.5
+157 silly currentTree ├── eslint-config-airbnb-base@14.2.1
+157 silly currentTree ├─┬ eslint-import-resolver-node@0.3.4
+157 silly currentTree │ ├── debug@2.6.9
+157 silly currentTree │ └── ms@2.0.0
+157 silly currentTree ├─┬ eslint-module-utils@2.6.0
+157 silly currentTree │ ├── debug@2.6.9
+157 silly currentTree │ └── ms@2.0.0
+157 silly currentTree ├── eslint-plugin-import@2.22.1
+157 silly currentTree ├── eslint-scope@5.1.1
+157 silly currentTree ├─┬ eslint-utils@2.1.0
+157 silly currentTree │ └── eslint-visitor-keys@1.3.0
+157 silly currentTree ├── eslint-visitor-keys@2.0.0
+157 silly currentTree ├── eslint@7.13.0
+157 silly currentTree ├─┬ espree@7.3.0
+157 silly currentTree │ └── eslint-visitor-keys@1.3.0
+157 silly currentTree ├── esprima@4.0.1
+157 silly currentTree ├─┬ esquery@1.3.1
+157 silly currentTree │ └── estraverse@5.2.0
+157 silly currentTree ├─┬ esrecurse@4.3.0
+157 silly currentTree │ └── estraverse@5.2.0
+157 silly currentTree ├── estraverse@4.3.0
+157 silly currentTree ├── esutils@2.0.3
+157 silly currentTree ├── fast-deep-equal@3.1.3
+157 silly currentTree ├── fast-json-stable-stringify@2.1.0
+157 silly currentTree ├── fast-levenshtein@2.0.6
+157 silly currentTree ├── file-entry-cache@5.0.1
+157 silly currentTree ├── find-up@2.1.0
+157 silly currentTree ├── flat-cache@2.0.1
+157 silly currentTree ├── flatted@2.0.2
+157 silly currentTree ├── fs.realpath@1.0.0
+157 silly currentTree ├── function-bind@1.1.1
+157 silly currentTree ├── functional-red-black-tree@1.0.1
+157 silly currentTree ├── get-intrinsic@1.0.1
+157 silly currentTree ├── glob-parent@5.1.1
+157 silly currentTree ├── glob@7.1.6
+157 silly currentTree ├── globals@12.4.0
+157 silly currentTree ├── graceful-fs@4.2.4
+157 silly currentTree ├── has-flag@3.0.0
+157 silly currentTree ├── has-symbols@1.0.1
+157 silly currentTree ├── has@1.0.3
+157 silly currentTree ├── hosted-git-info@2.8.8
+157 silly currentTree ├── ignore@4.0.6
+157 silly currentTree ├── import-fresh@3.2.2
+157 silly currentTree ├── imurmurhash@0.1.4
+157 silly currentTree ├── inflight@1.0.6
+157 silly currentTree ├── inherits@2.0.4
+157 silly currentTree ├── is-arrayish@0.2.1
+157 silly currentTree ├── is-callable@1.2.2
+157 silly currentTree ├── is-core-module@2.1.0
+157 silly currentTree ├── is-date-object@1.0.2
+157 silly currentTree ├── is-extglob@2.1.1
+157 silly currentTree ├── is-fullwidth-code-point@2.0.0
+157 silly currentTree ├── is-glob@4.0.1
+157 silly currentTree ├── is-negative-zero@2.0.0
+157 silly currentTree ├── is-regex@1.1.1
+157 silly currentTree ├── is-string@1.0.5
+157 silly currentTree ├── is-symbol@1.0.3
+157 silly currentTree ├── isarray@1.0.0
+157 silly currentTree ├── isexe@2.0.0
+157 silly currentTree ├── js-tokens@4.0.0
+157 silly currentTree ├── js-yaml@3.14.0
+157 silly currentTree ├── json-schema-traverse@0.4.1
+157 silly currentTree ├── json-stable-stringify-without-jsonify@1.0.1
+157 silly currentTree ├── json5@1.0.1
+157 silly currentTree ├── levn@0.4.1
+157 silly currentTree ├── load-json-file@2.0.0
+157 silly currentTree ├── locate-path@2.0.0
+157 silly currentTree ├── lodash@4.17.20
+157 silly currentTree ├── minimatch@3.0.4
+157 silly currentTree ├── minimist@1.2.5
+157 silly currentTree ├── mkdirp@0.5.5
+157 silly currentTree ├── ms@2.1.2
+157 silly currentTree ├── mute-stream@0.0.8
+157 silly currentTree ├── natural-compare@1.4.0
+157 silly currentTree ├─┬ normalize-package-data@2.5.0
+157 silly currentTree │ └── semver@5.7.1
+157 silly currentTree ├── object-inspect@1.8.0
+157 silly currentTree ├── object-keys@1.1.1
+157 silly currentTree ├── object.assign@4.1.2
+157 silly currentTree ├── object.entries@1.1.2
+157 silly currentTree ├── object.values@1.1.1
+157 silly currentTree ├── once@1.4.0
+157 silly currentTree ├── optionator@0.9.1
+157 silly currentTree ├── p-limit@1.3.0
+157 silly currentTree ├── p-locate@2.0.0
+157 silly currentTree ├── p-try@1.0.0
+157 silly currentTree ├── parent-module@1.0.1
+157 silly currentTree ├── parse-json@2.2.0
+157 silly currentTree ├── path-exists@3.0.0
+157 silly currentTree ├── path-is-absolute@1.0.1
+157 silly currentTree ├── path-key@3.1.1
+157 silly currentTree ├── path-parse@1.0.6
+157 silly currentTree ├── path-type@2.0.0
+157 silly currentTree ├── pify@2.3.0
+157 silly currentTree ├── pkg-dir@2.0.0
+157 silly currentTree ├── prelude-ls@1.2.1
+157 silly currentTree ├── progress@2.0.3
+157 silly currentTree ├── promptly@3.2.0
+157 silly currentTree ├── punycode@2.1.1
+157 silly currentTree ├── read-pkg-up@2.0.0
+157 silly currentTree ├── read-pkg@2.0.0
+157 silly currentTree ├── read@1.0.7
+157 silly currentTree ├── regexpp@3.1.0
+157 silly currentTree ├── resolve-from@4.0.0
+157 silly currentTree ├── resolve@1.18.1
+157 silly currentTree ├── rimraf@2.6.3
+157 silly currentTree ├── semver@7.3.2
+157 silly currentTree ├── shebang-command@2.0.0
+157 silly currentTree ├── shebang-regex@3.0.0
+157 silly currentTree ├── slice-ansi@2.1.0
+157 silly currentTree ├── spdx-correct@3.1.1
+157 silly currentTree ├── spdx-exceptions@2.3.0
+157 silly currentTree ├── spdx-expression-parse@3.0.1
+157 silly currentTree ├── spdx-license-ids@3.0.6
+157 silly currentTree ├── sprintf-js@1.0.3
+157 silly currentTree ├─┬ string-width@3.1.0
+157 silly currentTree │ ├── ansi-regex@4.1.0
+157 silly currentTree │ └── strip-ansi@5.2.0
+157 silly currentTree ├─┬ string.prototype.trimend@1.0.2
+157 silly currentTree │ └── es-abstract@1.18.0-next.1
+157 silly currentTree ├─┬ string.prototype.trimstart@1.0.2
+157 silly currentTree │ └── es-abstract@1.18.0-next.1
+157 silly currentTree ├── strip-ansi@6.0.0
+157 silly currentTree ├── strip-bom@3.0.0
+157 silly currentTree ├── strip-json-comments@3.1.1
+157 silly currentTree ├── supports-color@5.5.0
+157 silly currentTree ├── table@5.4.6
+157 silly currentTree ├── text-table@0.2.0
+157 silly currentTree ├── tsconfig-paths@3.9.0
+157 silly currentTree ├── type-check@0.4.0
+157 silly currentTree ├── type-fest@0.8.1
+157 silly currentTree ├── uri-js@4.4.0
+157 silly currentTree ├── v8-compile-cache@2.2.0
+157 silly currentTree ├── validate-npm-package-license@3.0.4
+157 silly currentTree ├── which@2.0.2
+157 silly currentTree ├── word-wrap@1.2.3
+157 silly currentTree ├── wrappy@1.0.2
+157 silly currentTree └── write@1.0.3
+158 silly idealTree hexlet-challenges@1.0.0
+158 silly idealTree ├── @babel/code-frame@7.10.4
+158 silly idealTree ├── @babel/helper-validator-identifier@7.10.4
+158 silly idealTree ├─┬ @babel/highlight@7.10.4
+158 silly idealTree │ └── chalk@2.4.2
+158 silly idealTree ├── @eslint/eslintrc@0.2.1
+158 silly idealTree ├── @types/json5@0.0.29
+158 silly idealTree ├── acorn-jsx@5.3.1
+158 silly idealTree ├── acorn@7.4.1
+158 silly idealTree ├── ajv@6.12.6
+158 silly idealTree ├── ansi-colors@4.1.1
+158 silly idealTree ├── ansi-regex@5.0.0
+158 silly idealTree ├── ansi-styles@3.2.1
+158 silly idealTree ├── argparse@1.0.10
+158 silly idealTree ├── array-includes@3.1.1
+158 silly idealTree ├── array.prototype.flat@1.2.3
+158 silly idealTree ├── astral-regex@1.0.0
+158 silly idealTree ├── balanced-match@1.0.0
+158 silly idealTree ├── brace-expansion@1.1.11
+158 silly idealTree ├── call-bind@1.0.0
+158 silly idealTree ├── callsites@3.1.0
+158 silly idealTree ├─┬ chalk@4.1.0
+158 silly idealTree │ ├── ansi-styles@4.3.0
+158 silly idealTree │ ├── color-convert@2.0.1
+158 silly idealTree │ ├── color-name@1.1.4
+158 silly idealTree │ ├── has-flag@4.0.0
+158 silly idealTree │ └── supports-color@7.2.0
+158 silly idealTree ├── color-convert@1.9.3
+158 silly idealTree ├── color-name@1.1.3
+158 silly idealTree ├── concat-map@0.0.1
+158 silly idealTree ├── confusing-browser-globals@1.0.10
+158 silly idealTree ├── contains-path@0.1.0
+158 silly idealTree ├── cross-spawn@7.0.3
+158 silly idealTree ├── debug@4.2.0
+158 silly idealTree ├── deep-is@0.1.3
+158 silly idealTree ├── define-properties@1.1.3
+158 silly idealTree ├── doctrine@3.0.0
+158 silly idealTree ├── emoji-regex@7.0.3
+158 silly idealTree ├── enquirer@2.3.6
+158 silly idealTree ├── error-ex@1.3.2
+158 silly idealTree ├── es-abstract@1.17.7
+158 silly idealTree ├── es-to-primitive@1.2.1
+158 silly idealTree ├── escape-string-regexp@1.0.5
+158 silly idealTree ├── eslint-config-airbnb-base@14.2.1
+158 silly idealTree ├─┬ eslint-import-resolver-node@0.3.4
+158 silly idealTree │ ├── debug@2.6.9
+158 silly idealTree │ └── ms@2.0.0
+158 silly idealTree ├─┬ eslint-module-utils@2.6.0
+158 silly idealTree │ ├── debug@2.6.9
+158 silly idealTree │ └── ms@2.0.0
+158 silly idealTree ├─┬ eslint-plugin-import@2.22.1
+158 silly idealTree │ ├── debug@2.6.9
+158 silly idealTree │ ├── doctrine@1.5.0
+158 silly idealTree │ └── ms@2.0.0
+158 silly idealTree ├── eslint-scope@5.1.1
+158 silly idealTree ├─┬ eslint-utils@2.1.0
+158 silly idealTree │ └── eslint-visitor-keys@1.3.0
+158 silly idealTree ├── eslint-visitor-keys@2.0.0
+158 silly idealTree ├── eslint@7.13.0
+158 silly idealTree ├─┬ espree@7.3.0
+158 silly idealTree │ └── eslint-visitor-keys@1.3.0
+158 silly idealTree ├── esprima@4.0.1
+158 silly idealTree ├─┬ esquery@1.3.1
+158 silly idealTree │ └── estraverse@5.2.0
+158 silly idealTree ├─┬ esrecurse@4.3.0
+158 silly idealTree │ └── estraverse@5.2.0
+158 silly idealTree ├── estraverse@4.3.0
+158 silly idealTree ├── esutils@2.0.3
+158 silly idealTree ├── fast-deep-equal@3.1.3
+158 silly idealTree ├── fast-json-stable-stringify@2.1.0
+158 silly idealTree ├── fast-levenshtein@2.0.6
+158 silly idealTree ├── file-entry-cache@5.0.1
+158 silly idealTree ├── find-up@2.1.0
+158 silly idealTree ├── flat-cache@2.0.1
+158 silly idealTree ├── flatted@2.0.2
+158 silly idealTree ├── fs.realpath@1.0.0
+158 silly idealTree ├── function-bind@1.1.1
+158 silly idealTree ├── functional-red-black-tree@1.0.1
+158 silly idealTree ├── get-intrinsic@1.0.1
+158 silly idealTree ├── glob-parent@5.1.1
+158 silly idealTree ├── glob@7.1.6
+158 silly idealTree ├── globals@12.4.0
+158 silly idealTree ├── graceful-fs@4.2.4
+158 silly idealTree ├── has-flag@3.0.0
+158 silly idealTree ├── has-symbols@1.0.1
+158 silly idealTree ├── has@1.0.3
+158 silly idealTree ├── hosted-git-info@2.8.8
+158 silly idealTree ├── ignore@4.0.6
+158 silly idealTree ├── import-fresh@3.2.2
+158 silly idealTree ├── imurmurhash@0.1.4
+158 silly idealTree ├── inflight@1.0.6
+158 silly idealTree ├── inherits@2.0.4
+158 silly idealTree ├── is-arrayish@0.2.1
+158 silly idealTree ├── is-callable@1.2.2
+158 silly idealTree ├── is-core-module@2.1.0
+158 silly idealTree ├── is-date-object@1.0.2
+158 silly idealTree ├── is-extglob@2.1.1
+158 silly idealTree ├── is-fullwidth-code-point@2.0.0
+158 silly idealTree ├── is-glob@4.0.1
+158 silly idealTree ├── is-negative-zero@2.0.0
+158 silly idealTree ├── is-regex@1.1.1
+158 silly idealTree ├── is-string@1.0.5
+158 silly idealTree ├── is-symbol@1.0.3
+158 silly idealTree ├── isarray@1.0.0
+158 silly idealTree ├── isexe@2.0.0
+158 silly idealTree ├── js-tokens@4.0.0
+158 silly idealTree ├── js-yaml@3.14.0
+158 silly idealTree ├── json-schema-traverse@0.4.1
+158 silly idealTree ├── json-stable-stringify-without-jsonify@1.0.1
+158 silly idealTree ├── json5@1.0.1
+158 silly idealTree ├── levn@0.4.1
+158 silly idealTree ├── load-json-file@2.0.0
+158 silly idealTree ├── locate-path@2.0.0
+158 silly idealTree ├── lodash@4.17.20
+158 silly idealTree ├── minimatch@3.0.4
+158 silly idealTree ├── minimist@1.2.5
+158 silly idealTree ├── mkdirp@0.5.5
+158 silly idealTree ├── ms@2.1.2
+158 silly idealTree ├── mute-stream@0.0.8
+158 silly idealTree ├── natural-compare@1.4.0
+158 silly idealTree ├─┬ normalize-package-data@2.5.0
+158 silly idealTree │ └── semver@5.7.1
+158 silly idealTree ├── object-inspect@1.8.0
+158 silly idealTree ├── object-keys@1.1.1
+158 silly idealTree ├── object.assign@4.1.2
+158 silly idealTree ├── object.entries@1.1.2
+158 silly idealTree ├── object.values@1.1.1
+158 silly idealTree ├── once@1.4.0
+158 silly idealTree ├── optionator@0.9.1
+158 silly idealTree ├── p-limit@1.3.0
+158 silly idealTree ├── p-locate@2.0.0
+158 silly idealTree ├── p-try@1.0.0
+158 silly idealTree ├── parent-module@1.0.1
+158 silly idealTree ├── parse-json@2.2.0
+158 silly idealTree ├── path-exists@3.0.0
+158 silly idealTree ├── path-is-absolute@1.0.1
+158 silly idealTree ├── path-key@3.1.1
+158 silly idealTree ├── path-parse@1.0.6
+158 silly idealTree ├── path-type@2.0.0
+158 silly idealTree ├── pify@2.3.0
+158 silly idealTree ├── pkg-dir@2.0.0
+158 silly idealTree ├── prelude-ls@1.2.1
+158 silly idealTree ├── progress@2.0.3
+158 silly idealTree ├── promptly@3.2.0
+158 silly idealTree ├── punycode@2.1.1
+158 silly idealTree ├── read-pkg-up@2.0.0
+158 silly idealTree ├── read-pkg@2.0.0
+158 silly idealTree ├── read@1.0.7
+158 silly idealTree ├── regexpp@3.1.0
+158 silly idealTree ├── resolve-from@4.0.0
+158 silly idealTree ├── resolve@1.18.1
+158 silly idealTree ├── rimraf@2.6.3
+158 silly idealTree ├── semver@7.3.2
+158 silly idealTree ├── shebang-command@2.0.0
+158 silly idealTree ├── shebang-regex@3.0.0
+158 silly idealTree ├── slice-ansi@2.1.0
+158 silly idealTree ├── spdx-correct@3.1.1
+158 silly idealTree ├── spdx-exceptions@2.3.0
+158 silly idealTree ├── spdx-expression-parse@3.0.1
+158 silly idealTree ├── spdx-license-ids@3.0.6
+158 silly idealTree ├── sprintf-js@1.0.3
+158 silly idealTree ├─┬ string-width@3.1.0
+158 silly idealTree │ ├── ansi-regex@4.1.0
+158 silly idealTree │ └── strip-ansi@5.2.0
+158 silly idealTree ├─┬ string.prototype.trimend@1.0.2
+158 silly idealTree │ └── es-abstract@1.18.0-next.1
+158 silly idealTree ├─┬ string.prototype.trimstart@1.0.2
+158 silly idealTree │ └── es-abstract@1.18.0-next.1
+158 silly idealTree ├── strip-ansi@6.0.0
+158 silly idealTree ├── strip-bom@3.0.0
+158 silly idealTree ├── strip-json-comments@3.1.1
+158 silly idealTree ├── supports-color@5.5.0
+158 silly idealTree ├── table@5.4.6
+158 silly idealTree ├── text-table@0.2.0
+158 silly idealTree ├── tsconfig-paths@3.9.0
+158 silly idealTree ├── type-check@0.4.0
+158 silly idealTree ├── type-fest@0.8.1
+158 silly idealTree ├── uri-js@4.4.0
+158 silly idealTree ├── v8-compile-cache@2.2.0
+158 silly idealTree ├── validate-npm-package-license@3.0.4
+158 silly idealTree ├── which@2.0.2
+158 silly idealTree ├── word-wrap@1.2.3
+158 silly idealTree ├── wrappy@1.0.2
+158 silly idealTree └── write@1.0.3
+159 silly generateActionsToTake Starting
+160 silly install generateActionsToTake
+161 silly generateActionsToTake Finishing
+162 silly diffTrees action count 8
+163 silly diffTrees add acorn@7.4.1
+164 silly diffTrees update eslint@7.13.0
+165 silly diffTrees update eslint-config-airbnb-base@14.2.1
+166 silly diffTrees add doctrine@1.5.0
+167 silly diffTrees add ms@2.0.0
+168 silly diffTrees add debug@2.6.9
+169 silly diffTrees update eslint-plugin-import@2.22.1
+170 silly diffTrees update promptly@3.2.0
+171 silly decomposeActions action count 64
+172 silly decomposeActions fetch acorn@7.4.1
+173 silly decomposeActions extract acorn@7.4.1
+174 silly decomposeActions test acorn@7.4.1
+175 silly decomposeActions preinstall acorn@7.4.1
+176 silly decomposeActions build acorn@7.4.1
+177 silly decomposeActions install acorn@7.4.1
+178 silly decomposeActions postinstall acorn@7.4.1
+179 silly decomposeActions finalize acorn@7.4.1
+180 silly decomposeActions fetch eslint@7.13.0
+181 silly decomposeActions extract eslint@7.13.0
+182 silly decomposeActions test eslint@7.13.0
+183 silly decomposeActions preinstall eslint@7.13.0
+184 silly decomposeActions build eslint@7.13.0
+185 silly decomposeActions install eslint@7.13.0
+186 silly decomposeActions postinstall eslint@7.13.0
+187 silly decomposeActions finalize eslint@7.13.0
+188 silly decomposeActions fetch eslint-config-airbnb-base@14.2.1
+189 silly decomposeActions extract eslint-config-airbnb-base@14.2.1
+190 silly decomposeActions test eslint-config-airbnb-base@14.2.1
+191 silly decomposeActions preinstall eslint-config-airbnb-base@14.2.1
+192 silly decomposeActions build eslint-config-airbnb-base@14.2.1
+193 silly decomposeActions install eslint-config-airbnb-base@14.2.1
+194 silly decomposeActions postinstall eslint-config-airbnb-base@14.2.1
+195 silly decomposeActions finalize eslint-config-airbnb-base@14.2.1
+196 silly decomposeActions fetch doctrine@1.5.0
+197 silly decomposeActions extract doctrine@1.5.0
+198 silly decomposeActions test doctrine@1.5.0
+199 silly decomposeActions preinstall doctrine@1.5.0
+200 silly decomposeActions build doctrine@1.5.0
+201 silly decomposeActions install doctrine@1.5.0
+202 silly decomposeActions postinstall doctrine@1.5.0
+203 silly decomposeActions finalize doctrine@1.5.0
+204 silly decomposeActions fetch ms@2.0.0
+205 silly decomposeActions extract ms@2.0.0
+206 silly decomposeActions test ms@2.0.0
+207 silly decomposeActions preinstall ms@2.0.0
+208 silly decomposeActions build ms@2.0.0
+209 silly decomposeActions install ms@2.0.0
+210 silly decomposeActions postinstall ms@2.0.0
+211 silly decomposeActions finalize ms@2.0.0
+212 silly decomposeActions fetch debug@2.6.9
+213 silly decomposeActions extract debug@2.6.9
+214 silly decomposeActions test debug@2.6.9
+215 silly decomposeActions preinstall debug@2.6.9
+216 silly decomposeActions build debug@2.6.9
+217 silly decomposeActions install debug@2.6.9
+218 silly decomposeActions postinstall debug@2.6.9
+219 silly decomposeActions finalize debug@2.6.9
+220 silly decomposeActions fetch eslint-plugin-import@2.22.1
+221 silly decomposeActions extract eslint-plugin-import@2.22.1
+222 silly decomposeActions test eslint-plugin-import@2.22.1
+223 silly decomposeActions preinstall eslint-plugin-import@2.22.1
+224 silly decomposeActions build eslint-plugin-import@2.22.1
+225 silly decomposeActions install eslint-plugin-import@2.22.1
+226 silly decomposeActions postinstall eslint-plugin-import@2.22.1
+227 silly decomposeActions finalize eslint-plugin-import@2.22.1
+228 silly decomposeActions fetch promptly@3.2.0
+229 silly decomposeActions extract promptly@3.2.0
+230 silly decomposeActions test promptly@3.2.0
+231 silly decomposeActions preinstall promptly@3.2.0
+232 silly decomposeActions build promptly@3.2.0
+233 silly decomposeActions install promptly@3.2.0
+234 silly decomposeActions postinstall promptly@3.2.0
+235 silly decomposeActions finalize promptly@3.2.0
+236 silly executeActions Starting
+237 silly install executeActions
+238 silly doSerial global-install 0
+239 silly doParallel fetch 8
+240 verbose lock using /home/vellio/.npm/_locks/staging-c4455fdc351b3c8b.lock for /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging
+241 silly doParallel extract 8
+242 silly extract acorn@7.4.1
+243 silly extract eslint@7.13.0
+244 silly extract eslint-config-airbnb-base@14.2.1
+245 silly extract doctrine@1.5.0
+246 silly extract ms@2.0.0
+247 silly extract debug@2.6.9
+248 silly extract eslint-plugin-import@2.22.1
+249 silly extract promptly@3.2.0
+250 silly addNamed eslint@7.13.0
+251 verbose addNamed "7.13.0" is a plain semver version for eslint
+252 silly mapToRegistry name eslint
+253 silly mapToRegistry using default registry
+254 silly mapToRegistry registry https://registry.npmjs.org/
+255 silly mapToRegistry uri https://registry.npmjs.org/eslint
+256 verbose addNameVersion registry:https://registry.npmjs.org/eslint not in flight; fetching
+257 silly addNamed eslint-plugin-import@2.22.1
+258 verbose addNamed "2.22.1" is a plain semver version for eslint-plugin-import
+259 silly mapToRegistry name eslint-plugin-import
+260 silly mapToRegistry using default registry
+261 silly mapToRegistry registry https://registry.npmjs.org/
+262 silly mapToRegistry uri https://registry.npmjs.org/eslint-plugin-import
+263 verbose addNameVersion registry:https://registry.npmjs.org/eslint-plugin-import not in flight; fetching
+264 silly addNamed promptly@3.2.0
+265 verbose addNamed "3.2.0" is a plain semver version for promptly
+266 silly mapToRegistry name promptly
+267 silly mapToRegistry using default registry
+268 silly mapToRegistry registry https://registry.npmjs.org/
+269 silly mapToRegistry uri https://registry.npmjs.org/promptly
+270 verbose addNameVersion registry:https://registry.npmjs.org/promptly not in flight; fetching
+271 silly addNamed eslint-config-airbnb-base@14.2.1
+272 verbose addNamed "14.2.1" is a plain semver version for eslint-config-airbnb-base
+273 silly mapToRegistry name eslint-config-airbnb-base
+274 silly mapToRegistry using default registry
+275 silly mapToRegistry registry https://registry.npmjs.org/
+276 silly mapToRegistry uri https://registry.npmjs.org/eslint-config-airbnb-base
+277 verbose addNameVersion registry:https://registry.npmjs.org/eslint-config-airbnb-base not in flight; fetching
+278 verbose unbuild node_modules/.staging/doctrine-961b8641
+279 verbose unbuild node_modules/.staging/debug-c69154a7
+280 verbose unbuild node_modules/.staging/ms-b699249d
+281 verbose unbuild node_modules/.staging/acorn-09f4418e
+282 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/doctrine-961b8641 is being purged from base /mnt/e/work/repos/hexlet-challenges-js
+283 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/doctrine-961b8641
+284 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/debug-c69154a7 is being purged from base /mnt/e/work/repos/hexlet-challenges-js
+285 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/debug-c69154a7
+286 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/ms-b699249d is being purged from base /mnt/e/work/repos/hexlet-challenges-js
+287 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/ms-b699249d
+288 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/acorn-09f4418e is being purged from base /mnt/e/work/repos/hexlet-challenges-js
+289 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/acorn-09f4418e
+290 verbose tar unpack /home/vellio/.npm/doctrine/1.5.0/package.tgz
+291 verbose tar unpacking to /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/doctrine-961b8641
+292 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/doctrine-961b8641 is being purged
+293 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/doctrine-961b8641
+294 verbose tar unpack /home/vellio/.npm/debug/2.6.9/package.tgz
+295 verbose tar unpacking to /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/debug-c69154a7
+296 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/debug-c69154a7 is being purged
+297 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/debug-c69154a7
+298 verbose tar unpack /home/vellio/.npm/ms/2.0.0/package.tgz
+299 verbose tar unpacking to /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/ms-b699249d
+300 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/ms-b699249d is being purged
+301 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/ms-b699249d
+302 verbose tar unpack /home/vellio/.npm/acorn/7.4.1/package.tgz
+303 verbose tar unpacking to /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/acorn-09f4418e
+304 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/acorn-09f4418e is being purged
+305 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/acorn-09f4418e
+306 verbose request uri https://registry.npmjs.org/promptly
+307 verbose request no auth needed
+308 info attempt registry request try #1 at 1:37:54 PM
+309 verbose etag W/"7c2ede94e81c3d56f9d5c8b2a64f01f3"
+310 verbose lastModified Fri, 06 Nov 2020 01:03:40 GMT
+311 http request GET https://registry.npmjs.org/promptly
+312 silly gunzTarPerm modes [ '755', '644' ]
+313 silly gunzTarPerm modes [ '755', '644' ]
+314 silly gunzTarPerm modes [ '755', '644' ]
+315 silly gunzTarPerm modes [ '755', '644' ]
+316 verbose request uri https://registry.npmjs.org/eslint-config-airbnb-base
+317 verbose request no auth needed
+318 info attempt registry request try #1 at 1:37:54 PM
+319 verbose etag W/"6a3aaf46431582b65937ac6fb1da49cb"
+320 verbose lastModified Tue, 24 Nov 2020 14:59:13 GMT
+321 http request GET https://registry.npmjs.org/eslint-config-airbnb-base
+322 verbose request uri https://registry.npmjs.org/eslint
+323 verbose request no auth needed
+324 info attempt registry request try #1 at 1:37:54 PM
+325 verbose etag W/"db2d33dd552f175f0c854737d8a2bbc2"
+326 verbose lastModified Fri, 20 Nov 2020 22:49:28 GMT
+327 http request GET https://registry.npmjs.org/eslint
+328 verbose request uri https://registry.npmjs.org/eslint-plugin-import
+329 verbose request no auth needed
+330 info attempt registry request try #1 at 1:37:54 PM
+331 verbose etag W/"b535684b5502c876bf58e570e97e0064"
+332 verbose lastModified Sun, 27 Sep 2020 23:05:16 GMT
+333 http request GET https://registry.npmjs.org/eslint-plugin-import
+334 silly gunzTarPerm extractEntry package.json
+335 silly gunzTarPerm extractEntry package.json
+336 silly gunzTarPerm extractEntry bin/acorn
+337 silly gunzTarPerm extractEntry package.json
+338 silly gunzTarPerm extractEntry LICENSE
+339 silly gunzTarPerm extractEntry dist/acorn.js
+340 silly gunzTarPerm extractEntry .npmignore
+341 silly gunzTarPerm extractEntry README.md
+342 silly gunzTarPerm extractEntry README.md
+343 silly gunzTarPerm extractEntry CHANGELOG.md
+344 silly gunzTarPerm extractEntry index.js
+345 silly gunzTarPerm extractEntry license.md
+346 http 304 https://registry.npmjs.org/eslint-config-airbnb-base
+347 verbose headers { date: 'Tue, 01 Dec 2020 10:37:50 GMT',
+347 verbose headers   connection: 'keep-alive',
+347 verbose headers   'set-cookie': [ '__cfduid=d8eb9f811c76abd984fe7e09e957770a71606819070; expires=Thu, 31-Dec-20 10:37:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+347 verbose headers   'cf-ray': '5fac2cd699480c3c-DME',
+347 verbose headers   age: '794',
+347 verbose headers   'cache-control': 'public, max-age=300',
+347 verbose headers   etag: '"6a3aaf46431582b65937ac6fb1da49cb"',
+347 verbose headers   'last-modified': 'Tue, 24 Nov 2020 14:59:13 GMT',
+347 verbose headers   vary: 'Accept-Encoding',
+347 verbose headers   'cf-cache-status': 'HIT',
+347 verbose headers   'cf-request-id': '06bf7a5a2300000c3c2c3d8000000001',
+347 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+347 verbose headers   server: 'cloudflare' }
+348 silly get cb [ 304,
+348 silly get   { date: 'Tue, 01 Dec 2020 10:37:50 GMT',
+348 silly get     connection: 'keep-alive',
+348 silly get     'set-cookie': [ '__cfduid=d8eb9f811c76abd984fe7e09e957770a71606819070; expires=Thu, 31-Dec-20 10:37:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+348 silly get     'cf-ray': '5fac2cd699480c3c-DME',
+348 silly get     age: '794',
+348 silly get     'cache-control': 'public, max-age=300',
+348 silly get     etag: '"6a3aaf46431582b65937ac6fb1da49cb"',
+348 silly get     'last-modified': 'Tue, 24 Nov 2020 14:59:13 GMT',
+348 silly get     vary: 'Accept-Encoding',
+348 silly get     'cf-cache-status': 'HIT',
+348 silly get     'cf-request-id': '06bf7a5a2300000c3c2c3d8000000001',
+348 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+348 silly get     server: 'cloudflare' } ]
+349 verbose etag https://registry.npmjs.org/eslint-config-airbnb-base from cache
+350 verbose get saving eslint-config-airbnb-base to /home/vellio/.npm/registry.npmjs.org/eslint-config-airbnb-base/.cache.json
+351 silly gunzTarPerm extractEntry readme.md
+352 silly gunzTarPerm extractEntry LICENSE
+353 silly gunzTarPerm extractEntry LICENSE.BSD
+354 silly gunzTarPerm extractEntry LICENSE.closure-compiler
+355 silly gunzTarPerm extractEntry dist/bin.js
+356 http 304 https://registry.npmjs.org/promptly
+357 verbose headers { date: 'Tue, 01 Dec 2020 10:37:50 GMT',
+357 verbose headers   connection: 'keep-alive',
+357 verbose headers   'set-cookie': [ '__cfduid=d545705883e2c4ea83c5fb674f5f80ff31606819070; expires=Thu, 31-Dec-20 10:37:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+357 verbose headers   'cf-ray': '5fac2cd6b9f37b7b-DME',
+357 verbose headers   age: '4511',
+357 verbose headers   'cache-control': 'public, max-age=300',
+357 verbose headers   etag: '"7c2ede94e81c3d56f9d5c8b2a64f01f3"',
+357 verbose headers   'last-modified': 'Fri, 06 Nov 2020 01:03:40 GMT',
+357 verbose headers   vary: 'Accept-Encoding',
+357 verbose headers   'cf-cache-status': 'HIT',
+357 verbose headers   'cf-request-id': '06bf7a5a3000007b7b84957000000001',
+357 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+357 verbose headers   server: 'cloudflare' }
+358 silly get cb [ 304,
+358 silly get   { date: 'Tue, 01 Dec 2020 10:37:50 GMT',
+358 silly get     connection: 'keep-alive',
+358 silly get     'set-cookie': [ '__cfduid=d545705883e2c4ea83c5fb674f5f80ff31606819070; expires=Thu, 31-Dec-20 10:37:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+358 silly get     'cf-ray': '5fac2cd6b9f37b7b-DME',
+358 silly get     age: '4511',
+358 silly get     'cache-control': 'public, max-age=300',
+358 silly get     etag: '"7c2ede94e81c3d56f9d5c8b2a64f01f3"',
+358 silly get     'last-modified': 'Fri, 06 Nov 2020 01:03:40 GMT',
+358 silly get     vary: 'Accept-Encoding',
+358 silly get     'cf-cache-status': 'HIT',
+358 silly get     'cf-request-id': '06bf7a5a3000007b7b84957000000001',
+358 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+358 silly get     server: 'cloudflare' } ]
+359 verbose etag https://registry.npmjs.org/promptly from cache
+360 verbose get saving promptly to /home/vellio/.npm/registry.npmjs.org/promptly/.cache.json
+361 silly gunzTarPerm extractEntry karma.conf.js
+362 silly gunzTarPerm extractEntry node.js
+363 silly gunzTarPerm extractEntry .eslintrc
+364 silly gunzTarPerm extractEntry Makefile
+365 silly mapToRegistry name eslint-config-airbnb-base
+366 silly mapToRegistry using default registry
+367 silly mapToRegistry registry https://registry.npmjs.org/
+368 silly mapToRegistry uri https://registry.npmjs.org/eslint-config-airbnb-base
+369 verbose addRemoteTarball https://registry.npmjs.org/eslint-config-airbnb-base/-/eslint-config-airbnb-base-14.2.1.tgz not in flight; adding
+370 verbose addRemoteTarball [ 'https://registry.npmjs.org/eslint-config-airbnb-base/-/eslint-config-airbnb-base-14.2.1.tgz',
+370 verbose addRemoteTarball   '8a2eb38455dc5a312550193b319cdaeef042cd1e' ]
+371 silly gunzTarPerm extractEntry LICENSE.esprima
+372 silly gunzTarPerm extractEntry package.json
+373 silly gunzTarPerm extractEntry dist/acorn.js.map
+374 http 304 https://registry.npmjs.org/eslint
+375 verbose headers { date: 'Tue, 01 Dec 2020 10:37:50 GMT',
+375 verbose headers   connection: 'keep-alive',
+375 verbose headers   'set-cookie': [ '__cfduid=d49a63c594932acf6e9e0b3239f3712151606819070; expires=Thu, 31-Dec-20 10:37:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+375 verbose headers   'cf-ray': '5fac2cd6cf6f0c42-DME',
+375 verbose headers   age: '6150',
+375 verbose headers   'cache-control': 'public, max-age=300',
+375 verbose headers   etag: '"db2d33dd552f175f0c854737d8a2bbc2"',
+375 verbose headers   'last-modified': 'Fri, 20 Nov 2020 22:49:28 GMT',
+375 verbose headers   vary: 'Accept-Encoding',
+375 verbose headers   'cf-cache-status': 'HIT',
+375 verbose headers   'cf-request-id': '06bf7a5a4100000c42ad0b3000000001',
+375 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+375 verbose headers   server: 'cloudflare' }
+376 silly get cb [ 304,
+376 silly get   { date: 'Tue, 01 Dec 2020 10:37:50 GMT',
+376 silly get     connection: 'keep-alive',
+376 silly get     'set-cookie': [ '__cfduid=d49a63c594932acf6e9e0b3239f3712151606819070; expires=Thu, 31-Dec-20 10:37:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+376 silly get     'cf-ray': '5fac2cd6cf6f0c42-DME',
+376 silly get     age: '6150',
+376 silly get     'cache-control': 'public, max-age=300',
+376 silly get     etag: '"db2d33dd552f175f0c854737d8a2bbc2"',
+376 silly get     'last-modified': 'Fri, 20 Nov 2020 22:49:28 GMT',
+376 silly get     vary: 'Accept-Encoding',
+376 silly get     'cf-cache-status': 'HIT',
+376 silly get     'cf-request-id': '06bf7a5a4100000c42ad0b3000000001',
+376 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+376 silly get     server: 'cloudflare' } ]
+377 verbose etag https://registry.npmjs.org/eslint from cache
+378 verbose get saving eslint to /home/vellio/.npm/registry.npmjs.org/eslint/.cache.json
+379 silly gunzTarPerm extractEntry .coveralls.yml
+380 silly gunzTarPerm extractEntry component.json
+381 silly mapToRegistry name promptly
+382 silly mapToRegistry using default registry
+383 silly mapToRegistry registry https://registry.npmjs.org/
+384 silly mapToRegistry uri https://registry.npmjs.org/promptly
+385 verbose addRemoteTarball https://registry.npmjs.org/promptly/-/promptly-3.2.0.tgz not in flight; adding
+386 verbose addRemoteTarball [ 'https://registry.npmjs.org/promptly/-/promptly-3.2.0.tgz',
+386 verbose addRemoteTarball   'a5517fbbf59bd31c1751d4e1d9bef1714f42b9d8' ]
+387 info retry fetch attempt 1 at 1:37:54 PM
+388 info attempt registry request try #1 at 1:37:54 PM
+389 http fetch GET https://registry.npmjs.org/eslint-config-airbnb-base/-/eslint-config-airbnb-base-14.2.1.tgz
+390 info retry fetch attempt 1 at 1:37:54 PM
+391 info attempt registry request try #1 at 1:37:54 PM
+392 http fetch GET https://registry.npmjs.org/promptly/-/promptly-3.2.0.tgz
+393 http 304 https://registry.npmjs.org/eslint-plugin-import
+394 verbose headers { date: 'Tue, 01 Dec 2020 10:37:50 GMT',
+394 verbose headers   connection: 'keep-alive',
+394 verbose headers   'set-cookie': [ '__cfduid=de8bbefdde6a04310373e266772b887fa1606819070; expires=Thu, 31-Dec-20 10:37:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+394 verbose headers   'cf-ray': '5fac2cd6e9f94989-DME',
+394 verbose headers   age: '822',
+394 verbose headers   'cache-control': 'public, max-age=300',
+394 verbose headers   etag: '"b535684b5502c876bf58e570e97e0064"',
+394 verbose headers   'last-modified': 'Sun, 27 Sep 2020 23:05:16 GMT',
+394 verbose headers   vary: 'Accept-Encoding',
+394 verbose headers   'cf-cache-status': 'HIT',
+394 verbose headers   'cf-request-id': '06bf7a5a51000049893d9ae000000001',
+394 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+394 verbose headers   server: 'cloudflare' }
+395 silly get cb [ 304,
+395 silly get   { date: 'Tue, 01 Dec 2020 10:37:50 GMT',
+395 silly get     connection: 'keep-alive',
+395 silly get     'set-cookie': [ '__cfduid=de8bbefdde6a04310373e266772b887fa1606819070; expires=Thu, 31-Dec-20 10:37:50 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+395 silly get     'cf-ray': '5fac2cd6e9f94989-DME',
+395 silly get     age: '822',
+395 silly get     'cache-control': 'public, max-age=300',
+395 silly get     etag: '"b535684b5502c876bf58e570e97e0064"',
+395 silly get     'last-modified': 'Sun, 27 Sep 2020 23:05:16 GMT',
+395 silly get     vary: 'Accept-Encoding',
+395 silly get     'cf-cache-status': 'HIT',
+395 silly get     'cf-request-id': '06bf7a5a51000049893d9ae000000001',
+395 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+395 silly get     server: 'cloudflare' } ]
+396 verbose etag https://registry.npmjs.org/eslint-plugin-import from cache
+397 verbose get saving eslint-plugin-import to /home/vellio/.npm/registry.npmjs.org/eslint-plugin-import/.cache.json
+398 silly gunzTarPerm extractEntry lib/doctrine.js
+399 silly gunzTarPerm extractEntry lib/typed.js
+400 silly mapToRegistry name eslint
+401 silly mapToRegistry using default registry
+402 silly mapToRegistry registry https://registry.npmjs.org/
+403 silly mapToRegistry uri https://registry.npmjs.org/eslint
+404 verbose addRemoteTarball https://registry.npmjs.org/eslint/-/eslint-7.13.0.tgz not in flight; adding
+405 verbose addRemoteTarball [ 'https://registry.npmjs.org/eslint/-/eslint-7.13.0.tgz',
+405 verbose addRemoteTarball   '7f180126c0dcdef327bfb54b211d7802decc08da' ]
+406 silly gunzTarPerm extractEntry .travis.yml
+407 silly gunzTarPerm extractEntry CHANGELOG.md
+408 silly gunzTarPerm extractEntry dist/acorn.mjs.map
+409 info retry fetch attempt 1 at 1:37:54 PM
+410 info attempt registry request try #1 at 1:37:54 PM
+411 http fetch GET https://registry.npmjs.org/eslint/-/eslint-7.13.0.tgz
+412 silly gunzTarPerm extractEntry lib/utility.js
+413 silly mapToRegistry name eslint-plugin-import
+414 silly mapToRegistry using default registry
+415 silly mapToRegistry registry https://registry.npmjs.org/
+416 silly mapToRegistry uri https://registry.npmjs.org/eslint-plugin-import
+417 verbose addRemoteTarball https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.22.1.tgz not in flight; adding
+418 verbose addRemoteTarball [ 'https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.22.1.tgz',
+418 verbose addRemoteTarball   '0896c7e6a0cf44109a2d97b95903c2bb689d7702' ]
+419 silly gunzTarPerm extractEntry src/browser.js
+420 silly gunzTarPerm extractEntry src/debug.js
+421 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/ms-b699249d/node_modules is being purged
+422 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/ms-b699249d/node_modules
+423 info retry fetch attempt 1 at 1:37:54 PM
+424 info attempt registry request try #1 at 1:37:54 PM
+425 http fetch GET https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.22.1.tgz
+426 silly gunzTarPerm extractEntry src/index.js
+427 silly gunzTarPerm extractEntry src/inspector-log.js
+428 silly gunzTarPerm extractEntry CHANGELOG.md
+429 silly gunzTarPerm extractEntry README.md
+430 silly gunzTarPerm extractEntry dist/acorn.mjs
+431 silly gunzTarPerm extractEntry src/node.js
+432 http fetch 200 https://registry.npmjs.org/eslint-config-airbnb-base/-/eslint-config-airbnb-base-14.2.1.tgz
+433 silly gunzTarPerm extractEntry dist/acorn.d.ts
+434 silly fetchAndShaCheck shasum 8a2eb38455dc5a312550193b319cdaeef042cd1e
+435 silly gunzTarPerm extractEntry dist/acorn.mjs.d.ts
+436 verbose addTmpTarball /tmp/npm-296-c967a3af/registry.npmjs.org/eslint-config-airbnb-base/-/eslint-config-airbnb-base-14.2.1.tgz not in flight; adding
+437 verbose addTmpTarball already have metadata; skipping unpack for eslint-config-airbnb-base@14.2.1
+438 http fetch 200 https://registry.npmjs.org/promptly/-/promptly-3.2.0.tgz
+439 verbose unbuild node_modules/.staging/eslint-config-airbnb-base-b61761ab
+440 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-config-airbnb-base-b61761ab is being purged from base /mnt/e/work/repos/hexlet-challenges-js
+441 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-config-airbnb-base-b61761ab
+442 verbose tar unpack /home/vellio/.npm/eslint-config-airbnb-base/14.2.1/package.tgz
+443 verbose tar unpacking to /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-config-airbnb-base-b61761ab
+444 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-config-airbnb-base-b61761ab is being purged
+445 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-config-airbnb-base-b61761ab
+446 silly fetchAndShaCheck shasum a5517fbbf59bd31c1751d4e1d9bef1714f42b9d8
+447 silly gunzTarPerm modes [ '755', '644' ]
+448 verbose addTmpTarball /tmp/npm-296-c967a3af/registry.npmjs.org/promptly/-/promptly-3.2.0.tgz not in flight; adding
+449 verbose addTmpTarball already have metadata; skipping unpack for promptly@3.2.0
+450 http fetch 200 https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.22.1.tgz
+451 http fetch 200 https://registry.npmjs.org/eslint/-/eslint-7.13.0.tgz
+452 silly gunzTarPerm extractEntry .babelrc
+453 silly gunzTarPerm extractEntry .eslintrc
+454 silly gunzTarPerm extractEntry test/.eslintrc
+455 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/doctrine-961b8641/node_modules is being purged
+456 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/doctrine-961b8641/node_modules
+457 verbose unbuild node_modules/.staging/promptly-7a71664d
+458 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/promptly-7a71664d is being purged from base /mnt/e/work/repos/hexlet-challenges-js
+459 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/promptly-7a71664d
+460 silly gunzTarPerm extractEntry rules/best-practices.js
+461 silly gunzTarPerm extractEntry rules/errors.js
+462 verbose tar unpack /home/vellio/.npm/promptly/3.2.0/package.tgz
+463 verbose tar unpacking to /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/promptly-7a71664d
+464 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/promptly-7a71664d is being purged
+465 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/promptly-7a71664d
+466 silly gunzTarPerm modes [ '755', '644' ]
+467 silly fetchAndShaCheck shasum 0896c7e6a0cf44109a2d97b95903c2bb689d7702
+468 silly gunzTarPerm extractEntry rules/es6.js
+469 silly gunzTarPerm extractEntry LICENSE
+470 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+471 silly gunzTarPerm extractEntry lib/getOptions.js
+472 silly gunzTarPerm modified mode [ 'lib/getOptions.js', 438, 420 ]
+473 silly gunzTarPerm extractEntry index.js
+474 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+475 verbose addTmpTarball /tmp/npm-296-c967a3af/registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.22.1.tgz not in flight; adding
+476 verbose addTmpTarball already have metadata; skipping unpack for eslint-plugin-import@2.22.1
+477 silly gunzTarPerm extractEntry rules/imports.js
+478 silly gunzTarPerm extractEntry index.js
+479 silly gunzTarPerm extractEntry lib/prompt.js
+480 silly gunzTarPerm modified mode [ 'lib/prompt.js', 438, 420 ]
+481 silly gunzTarPerm extractEntry package.json
+482 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+483 silly fetchAndShaCheck shasum 7f180126c0dcdef327bfb54b211d7802decc08da
+484 silly gunzTarPerm extractEntry legacy.js
+485 silly gunzTarPerm extractEntry rules/node.js
+486 verbose unbuild node_modules/.staging/eslint-plugin-import-21a4627b
+487 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-plugin-import-21a4627b is being purged from base /mnt/e/work/repos/hexlet-challenges-js
+488 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-plugin-import-21a4627b
+489 verbose tar unpack /home/vellio/.npm/eslint-plugin-import/2.22.1/package.tgz
+490 verbose tar unpacking to /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-plugin-import-21a4627b
+491 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-plugin-import-21a4627b is being purged
+492 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-plugin-import-21a4627b
+493 silly gunzTarPerm extractEntry CHANGELOG.md
+494 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 438, 420 ]
+495 silly gunzTarPerm extractEntry README.md
+496 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+497 silly gunzTarPerm modes [ '755', '644' ]
+498 silly gunzTarPerm extractEntry test/requires.js
+499 silly gunzTarPerm extractEntry rules/strict.js
+500 silly gunzTarPerm extractEntry LICENSE
+501 verbose addTmpTarball /tmp/npm-296-c967a3af/registry.npmjs.org/eslint/-/eslint-7.13.0.tgz not in flight; adding
+502 verbose addTmpTarball already have metadata; skipping unpack for eslint@7.13.0
+503 silly gunzTarPerm extractEntry memo-parser/LICENSE
+504 silly gunzTarPerm extractEntry lib/rules/default.js
+505 silly gunzTarPerm extractEntry rules/style.js
+506 silly gunzTarPerm extractEntry test/test-base.js
+507 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/debug-c69154a7/node_modules is being purged
+508 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/debug-c69154a7/node_modules
+509 silly gunzTarPerm extractEntry lib/docsUrl.js
+510 silly gunzTarPerm extractEntry lib/rules/dynamic-import-chunkname.js
+511 silly gunzTarPerm extractEntry rules/variables.js
+512 silly gunzTarPerm extractEntry whitespace.js
+513 verbose unbuild node_modules/.staging/eslint-d47b54ad
+514 silly gunzTarPerm extractEntry config/electron.js
+515 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-d47b54ad is being purged from base /mnt/e/work/repos/hexlet-challenges-js
+516 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-d47b54ad
+517 verbose tar unpack /home/vellio/.npm/eslint/7.13.0/package.tgz
+518 verbose tar unpacking to /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-d47b54ad
+519 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-d47b54ad is being purged
+520 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-d47b54ad
+521 silly gunzTarPerm modes [ '755', '644' ]
+522 silly gunzTarPerm extractEntry package.json
+523 silly gunzTarPerm extractEntry CHANGELOG.md
+524 silly gunzTarPerm extractEntry LICENSE
+525 silly gunzTarPerm extractEntry lib/cli-engine/formatters/html-template-message.html
+526 silly gunzTarPerm extractEntry lib/cli-engine/formatters/html-template-page.html
+527 silly gunzTarPerm extractEntry LICENSE.md
+528 silly gunzTarPerm extractEntry README.md
+529 silly gunzTarPerm extractEntry config/errors.js
+530 silly gunzTarPerm extractEntry lib/rules/export.js
+531 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/promptly-7a71664d/node_modules is being purged
+532 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/promptly-7a71664d/node_modules
+533 silly gunzTarPerm extractEntry lib/ExportMap.js
+534 silly gunzTarPerm extractEntry lib/rules/exports-last.js
+535 silly gunzTarPerm extractEntry lib/cli-engine/formatters/html-template-result.html
+536 silly gunzTarPerm extractEntry lib/rules/accessor-pairs.js
+537 silly gunzTarPerm extractEntry lib/rules/extensions.js
+538 silly gunzTarPerm extractEntry lib/rules/first.js
+539 silly gunzTarPerm extractEntry lib/shared/ajv.js
+540 silly gunzTarPerm extractEntry lib/rules/group-exports.js
+541 silly gunzTarPerm extractEntry lib/importDeclaration.js
+542 silly gunzTarPerm extractEntry lib/api.js
+543 silly gunzTarPerm extractEntry lib/linter/apply-disable-directives.js
+544 silly gunzTarPerm extractEntry lib/rules/imports-first.js
+545 silly gunzTarPerm extractEntry lib/core/importType.js
+546 silly gunzTarPerm extractEntry lib/index.js
+547 silly gunzTarPerm extractEntry memo-parser/index.js
+548 silly gunzTarPerm extractEntry lib/rules/max-dependencies.js
+549 silly gunzTarPerm extractEntry lib/rules/named.js
+550 silly gunzTarPerm extractEntry lib/rules/array-bracket-newline.js
+551 silly gunzTarPerm extractEntry lib/rules/array-bracket-spacing.js
+552 silly gunzTarPerm extractEntry lib/rules/namespace.js
+553 silly gunzTarPerm extractEntry lib/rules/newline-after-import.js
+554 silly gunzTarPerm extractEntry lib/rules/no-absolute-path.js
+555 silly gunzTarPerm extractEntry lib/rules/no-amd.js
+556 silly gunzTarPerm extractEntry lib/rules/array-callback-return.js
+557 silly gunzTarPerm extractEntry lib/rules/array-element-newline.js
+558 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/acorn-09f4418e/node_modules is being purged
+559 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/acorn-09f4418e/node_modules
+560 silly gunzTarPerm extractEntry lib/rules/no-anonymous-default-export.js
+561 silly gunzTarPerm extractEntry lib/rules/no-commonjs.js
+562 silly gunzTarPerm extractEntry lib/rules/arrow-body-style.js
+563 silly gunzTarPerm extractEntry lib/rules/arrow-parens.js
+564 silly gunzTarPerm extractEntry lib/rules/no-cycle.js
+565 silly gunzTarPerm extractEntry lib/rules/no-default-export.js
+566 silly gunzTarPerm extractEntry lib/rules/no-deprecated.js
+567 silly gunzTarPerm extractEntry lib/rules/arrow-spacing.js
+568 silly gunzTarPerm extractEntry lib/rules/utils/ast-utils.js
+569 silly gunzTarPerm extractEntry lib/rules/no-duplicates.js
+570 silly gunzTarPerm extractEntry lib/rules/no-dynamic-require.js
+571 silly gunzTarPerm extractEntry lib/rules/no-extraneous-dependencies.js
+572 silly gunzTarPerm extractEntry lib/rules/no-internal-modules.js
+573 silly gunzTarPerm extractEntry lib/shared/ast-utils.js
+574 silly gunzTarPerm extractEntry lib/init/autoconfig.js
+575 silly gunzTarPerm extractEntry lib/source-code/token-store/backward-token-comment-cursor.js
+576 silly gunzTarPerm extractEntry lib/source-code/token-store/backward-token-cursor.js
+577 silly gunzTarPerm extractEntry lib/rules/no-mutable-exports.js
+578 silly gunzTarPerm extractEntry lib/rules/no-named-as-default-member.js
+579 silly gunzTarPerm extractEntry lib/rules/block-scoped-var.js
+580 silly gunzTarPerm extractEntry lib/rules/block-spacing.js
+581 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-config-airbnb-base-b61761ab/node_modules is being purged
+582 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-config-airbnb-base-b61761ab/node_modules
+583 silly gunzTarPerm extractEntry lib/rules/no-named-as-default.js
+584 silly gunzTarPerm extractEntry lib/rules/no-named-default.js
+585 silly gunzTarPerm extractEntry lib/rules/brace-style.js
+586 silly gunzTarPerm extractEntry lib/rules/callback-return.js
+587 silly gunzTarPerm extractEntry lib/rules/no-named-export.js
+588 silly gunzTarPerm extractEntry lib/rules/no-namespace.js
+589 silly gunzTarPerm extractEntry lib/rules/camelcase.js
+590 silly gunzTarPerm extractEntry lib/rules/capitalized-comments.js
+591 silly gunzTarPerm extractEntry lib/rules/no-nodejs-modules.js
+592 silly gunzTarPerm extractEntry lib/rules/no-relative-parent-imports.js
+593 silly gunzTarPerm extractEntry lib/cli-engine/formatters/checkstyle.js
+594 silly gunzTarPerm extractEntry lib/rules/class-methods-use-this.js
+595 silly gunzTarPerm extractEntry lib/rules/no-restricted-paths.js
+596 silly gunzTarPerm extractEntry lib/rules/no-self-import.js
+597 silly gunzTarPerm extractEntry lib/cli-engine/cli-engine.js
+598 silly gunzTarPerm extractEntry lib/cli.js
+599 silly gunzTarPerm extractEntry lib/rules/no-unassigned-import.js
+600 silly gunzTarPerm extractEntry lib/rules/no-unresolved.js
+601 silly gunzTarPerm extractEntry lib/linter/code-path-analysis/code-path-analyzer.js
+602 silly gunzTarPerm extractEntry lib/linter/code-path-analysis/code-path-segment.js
+603 silly gunzTarPerm extractEntry lib/linter/code-path-analysis/code-path-state.js
+604 silly gunzTarPerm extractEntry lib/rules/no-unused-modules.js
+605 silly gunzTarPerm extractEntry lib/rules/no-useless-path-segments.js
+606 silly gunzTarPerm extractEntry lib/linter/code-path-analysis/code-path.js
+607 silly gunzTarPerm extractEntry lib/cli-engine/formatters/codeframe.js
+608 silly gunzTarPerm extractEntry lib/rules/no-webpack-loader-syntax.js
+609 silly gunzTarPerm extractEntry lib/rules/order.js
+610 silly gunzTarPerm extractEntry lib/rules/comma-dangle.js
+611 silly gunzTarPerm extractEntry lib/rules/comma-spacing.js
+612 silly gunzTarPerm extractEntry lib/rules/prefer-default-export.js
+613 silly gunzTarPerm extractEntry config/react-native.js
+614 silly gunzTarPerm extractEntry lib/rules/comma-style.js
+615 silly gunzTarPerm extractEntry lib/cli-engine/formatters/compact.js
+616 silly gunzTarPerm extractEntry config/react.js
+617 silly gunzTarPerm extractEntry config/recommended.js
+618 silly gunzTarPerm extractEntry config/stage-0.js
+619 silly gunzTarPerm extractEntry lib/core/staticRequire.js
+620 silly gunzTarPerm extractEntry lib/rules/complexity.js
+621 silly gunzTarPerm extractEntry lib/rules/computed-property-spacing.js
+622 silly gunzTarPerm extractEntry config/typescript.js
+623 silly gunzTarPerm extractEntry lib/rules/unambiguous.js
+624 silly gunzTarPerm extractEntry config/warnings.js
+625 silly gunzTarPerm extractEntry lib/linter/config-comment-parser.js
+626 silly gunzTarPerm extractEntry lib/init/config-file.js
+627 silly gunzTarPerm extractEntry memo-parser/package.json
+628 silly gunzTarPerm extractEntry package.json
+629 silly gunzTarPerm extractEntry lib/init/config-initializer.js
+630 silly gunzTarPerm extractEntry lib/init/config-rule.js
+631 silly gunzTarPerm extractEntry CHANGELOG.md
+632 silly gunzTarPerm extractEntry CONTRIBUTING.md
+633 silly gunzTarPerm extractEntry conf/config-schema.js
+634 silly gunzTarPerm extractEntry lib/shared/config-validator.js
+635 silly gunzTarPerm extractEntry docs/rules/default.md
+636 silly gunzTarPerm extractEntry docs/rules/dynamic-import-chunkname.md
+637 silly gunzTarPerm extractEntry lib/rules/consistent-return.js
+638 silly gunzTarPerm extractEntry lib/rules/consistent-this.js
+639 silly gunzTarPerm extractEntry docs/rules/export.md
+640 silly gunzTarPerm extractEntry docs/rules/exports-last.md
+641 silly gunzTarPerm extractEntry lib/rules/constructor-super.js
+642 silly gunzTarPerm extractEntry lib/rules/curly.js
+643 silly gunzTarPerm extractEntry lib/source-code/token-store/cursor.js
+644 silly gunzTarPerm extractEntry lib/source-code/token-store/cursors.js
+645 silly gunzTarPerm extractEntry docs/rules/extensions.md
+646 silly gunzTarPerm extractEntry docs/rules/first.md
+647 silly gunzTarPerm extractEntry docs/rules/group-exports.md
+648 silly gunzTarPerm extractEntry docs/rules/imports-first.md
+649 silly gunzTarPerm extractEntry lib/linter/code-path-analysis/debug-helpers.js
+650 silly gunzTarPerm extractEntry lib/source-code/token-store/decorative-cursor.js
+651 silly gunzTarPerm extractEntry docs/rules/max-dependencies.md
+652 silly gunzTarPerm extractEntry docs/rules/named.md
+653 silly gunzTarPerm extractEntry docs/rules/namespace.md
+654 silly gunzTarPerm extractEntry docs/rules/newline-after-import.md
+655 silly gunzTarPerm extractEntry docs/rules/no-absolute-path.md
+656 silly gunzTarPerm extractEntry lib/rules/default-case-last.js
+657 silly gunzTarPerm extractEntry lib/rules/default-case.js
+658 silly gunzTarPerm extractEntry docs/rules/no-amd.md
+659 silly gunzTarPerm extractEntry docs/rules/no-anonymous-default-export.md
+660 silly gunzTarPerm extractEntry conf/default-cli-options.js
+661 silly gunzTarPerm extractEntry lib/rules/default-param-last.js
+662 silly gunzTarPerm extractEntry docs/rules/no-commonjs.md
+663 silly gunzTarPerm extractEntry docs/rules/no-cycle.md
+664 silly gunzTarPerm extractEntry docs/rules/no-default-export.md
+665 silly gunzTarPerm extractEntry lib/shared/deprecation-warnings.js
+666 silly gunzTarPerm extractEntry lib/rules/dot-location.js
+667 silly gunzTarPerm extractEntry lib/rules/dot-notation.js
+668 silly gunzTarPerm extractEntry docs/rules/no-deprecated.md
+669 silly gunzTarPerm extractEntry lib/rules/eol-last.js
+670 silly gunzTarPerm extractEntry lib/rules/eqeqeq.js
+671 silly gunzTarPerm extractEntry docs/rules/no-duplicates.md
+672 silly gunzTarPerm extractEntry docs/rules/no-dynamic-require.md
+673 silly gunzTarPerm extractEntry conf/eslint-all.js
+674 silly gunzTarPerm extractEntry conf/eslint-recommended.js
+675 silly gunzTarPerm extractEntry docs/rules/no-extraneous-dependencies.md
+676 silly gunzTarPerm extractEntry docs/rules/no-internal-modules.md
+677 silly gunzTarPerm extractEntry bin/eslint.js
+678 silly gunzTarPerm extractEntry lib/eslint/eslint.js
+679 silly gunzTarPerm extractEntry lib/cli-engine/file-enumerator.js
+680 silly gunzTarPerm extractEntry docs/rules/no-mutable-exports.md
+681 silly gunzTarPerm extractEntry docs/rules/no-named-as-default-member.md
+682 silly gunzTarPerm extractEntry lib/source-code/token-store/filter-cursor.js
+683 silly gunzTarPerm extractEntry docs/rules/no-named-as-default.md
+684 silly gunzTarPerm extractEntry docs/rules/no-named-default.md
+685 silly gunzTarPerm extractEntry lib/rules/utils/fix-tracker.js
+686 silly gunzTarPerm extractEntry lib/rules/for-direction.js
+687 silly gunzTarPerm extractEntry docs/rules/no-named-export.md
+688 silly gunzTarPerm extractEntry docs/rules/no-namespace.md
+689 silly gunzTarPerm extractEntry lib/linter/code-path-analysis/fork-context.js
+690 silly gunzTarPerm extractEntry lib/source-code/token-store/forward-token-comment-cursor.js
+691 silly gunzTarPerm extractEntry lib/source-code/token-store/forward-token-cursor.js
+692 silly gunzTarPerm extractEntry lib/rules/func-call-spacing.js
+693 silly gunzTarPerm extractEntry lib/rules/func-name-matching.js
+694 silly gunzTarPerm extractEntry docs/rules/no-nodejs-modules.md
+695 silly gunzTarPerm extractEntry docs/rules/no-relative-parent-imports.md
+696 silly gunzTarPerm extractEntry lib/rules/func-names.js
+697 silly gunzTarPerm extractEntry lib/rules/func-style.js
+698 silly gunzTarPerm extractEntry docs/rules/no-restricted-paths.md
+699 silly gunzTarPerm extractEntry docs/rules/no-self-import.md
+700 silly gunzTarPerm extractEntry docs/rules/no-unassigned-import.md
+701 silly gunzTarPerm extractEntry docs/rules/no-unresolved.md
+702 silly gunzTarPerm extractEntry lib/rules/function-call-argument-newline.js
+703 silly gunzTarPerm extractEntry lib/rules/function-paren-newline.js
+704 silly gunzTarPerm extractEntry docs/rules/no-unused-modules.md
+705 silly gunzTarPerm extractEntry docs/rules/no-useless-path-segments.md
+706 silly gunzTarPerm extractEntry lib/rules/generator-star-spacing.js
+707 silly gunzTarPerm extractEntry lib/rules/getter-return.js
+708 silly gunzTarPerm extractEntry docs/rules/no-webpack-loader-syntax.md
+709 silly gunzTarPerm extractEntry docs/rules/order.md
+710 silly gunzTarPerm extractEntry lib/rules/global-require.js
+711 silly gunzTarPerm extractEntry docs/rules/prefer-default-export.md
+712 silly gunzTarPerm extractEntry memo-parser/README.md
+713 silly gunzTarPerm extractEntry lib/rules/grouped-accessor-pairs.js
+714 silly gunzTarPerm extractEntry lib/rules/guard-for-in.js
+715 silly gunzTarPerm extractEntry README.md
+716 silly gunzTarPerm extractEntry RELEASE.md
+717 silly gunzTarPerm extractEntry SECURITY.md
+718 silly gunzTarPerm extractEntry docs/rules/unambiguous.md
+719 silly gunzTarPerm extractEntry lib/rules/handle-callback-err.js
+720 silly gunzTarPerm extractEntry lib/cli-engine/hash.js
+721 silly gunzTarPerm extractEntry lib/cli-engine/formatters/html.js
+722 silly gunzTarPerm extractEntry lib/rules/id-blacklist.js
+723 silly gunzTarPerm extractEntry lib/rules/id-denylist.js
+724 silly gunzTarPerm extractEntry lib/linter/code-path-analysis/id-generator.js
+725 silly gunzTarPerm extractEntry lib/rules/id-length.js
+726 silly gunzTarPerm extractEntry lib/rules/id-match.js
+727 silly gunzTarPerm extractEntry lib/rules/implicit-arrow-linebreak.js
+728 silly gunzTarPerm extractEntry lib/rules/indent-legacy.js
+729 silly gunzTarPerm extractEntry lib/rules/indent.js
+730 silly gunzTarPerm extractEntry lib/cli-engine/index.js
+731 silly gunzTarPerm extractEntry lib/eslint/index.js
+732 silly gunzTarPerm extractEntry lib/linter/index.js
+733 silly gunzTarPerm extractEntry lib/rule-tester/index.js
+734 silly gunzTarPerm extractEntry lib/rules/index.js
+735 silly gunzTarPerm extractEntry lib/rules/utils/unicode/index.js
+736 silly gunzTarPerm extractEntry lib/source-code/index.js
+737 silly gunzTarPerm extractEntry lib/source-code/token-store/index.js
+738 silly gunzTarPerm extractEntry lib/rules/init-declarations.js
+739 silly gunzTarPerm extractEntry lib/linter/interpolate.js
+740 silly gunzTarPerm extractEntry lib/rules/utils/unicode/is-combining-character.js
+741 silly gunzTarPerm extractEntry lib/rules/utils/unicode/is-emoji-modifier.js
+742 silly gunzTarPerm extractEntry lib/rules/utils/unicode/is-regional-indicator-symbol.js
+743 silly gunzTarPerm extractEntry lib/rules/utils/unicode/is-surrogate-pair.js
+744 silly gunzTarPerm extractEntry lib/cli-engine/formatters/jslint-xml.js
+745 silly gunzTarPerm extractEntry lib/cli-engine/formatters/json-with-metadata.js
+746 silly gunzTarPerm extractEntry lib/cli-engine/formatters/json.js
+747 silly gunzTarPerm extractEntry lib/rules/jsx-quotes.js
+748 silly gunzTarPerm extractEntry lib/cli-engine/formatters/junit.js
+749 silly gunzTarPerm extractEntry lib/rules/key-spacing.js
+750 silly gunzTarPerm extractEntry lib/rules/keyword-spacing.js
+751 silly gunzTarPerm extractEntry lib/rules/utils/keywords.js
+752 silly gunzTarPerm extractEntry lib/rules/utils/lazy-loading-rule-map.js
+753 silly gunzTarPerm extractEntry lib/rules/utils/patterns/letters.js
+754 silly gunzTarPerm extractEntry lib/source-code/token-store/limit-cursor.js
+755 silly gunzTarPerm extractEntry lib/rules/line-comment-position.js
+756 silly gunzTarPerm extractEntry lib/rules/linebreak-style.js
+757 silly gunzTarPerm extractEntry lib/rules/lines-around-comment.js
+758 silly gunzTarPerm extractEntry lib/rules/lines-around-directive.js
+759 silly gunzTarPerm extractEntry lib/rules/lines-between-class-members.js
+760 silly gunzTarPerm extractEntry lib/cli-engine/lint-result-cache.js
+761 silly gunzTarPerm extractEntry lib/linter/linter.js
+762 silly gunzTarPerm extractEntry lib/cli-engine/load-rules.js
+763 silly gunzTarPerm extractEntry lib/shared/logging.js
+764 silly gunzTarPerm extractEntry lib/rules/max-classes-per-file.js
+765 silly gunzTarPerm extractEntry lib/rules/max-depth.js
+766 silly gunzTarPerm extractEntry lib/rules/max-len.js
+767 silly gunzTarPerm extractEntry lib/rules/max-lines-per-function.js
+768 silly gunzTarPerm extractEntry lib/rules/max-lines.js
+769 silly gunzTarPerm extractEntry lib/rules/max-nested-callbacks.js
+770 silly gunzTarPerm extractEntry lib/rules/max-params.js
+771 silly gunzTarPerm extractEntry lib/rules/max-statements-per-line.js
+772 silly gunzTarPerm extractEntry lib/rules/max-statements.js
+773 silly gunzTarPerm extractEntry lib/rules/multiline-comment-style.js
+774 silly gunzTarPerm extractEntry lib/rules/multiline-ternary.js
+775 silly gunzTarPerm extractEntry lib/rules/new-cap.js
+776 silly gunzTarPerm extractEntry lib/rules/new-parens.js
+777 silly gunzTarPerm extractEntry lib/rules/newline-after-var.js
+778 silly gunzTarPerm extractEntry lib/rules/newline-before-return.js
+779 silly gunzTarPerm extractEntry lib/rules/newline-per-chained-call.js
+780 silly gunzTarPerm extractEntry lib/rules/no-alert.js
+781 silly gunzTarPerm extractEntry lib/rules/no-array-constructor.js
+782 silly gunzTarPerm extractEntry lib/rules/no-async-promise-executor.js
+783 silly gunzTarPerm extractEntry lib/rules/no-await-in-loop.js
+784 silly gunzTarPerm extractEntry lib/rules/no-bitwise.js
+785 silly gunzTarPerm extractEntry lib/rules/no-buffer-constructor.js
+786 silly gunzTarPerm extractEntry lib/rules/no-caller.js
+787 silly gunzTarPerm extractEntry lib/rules/no-case-declarations.js
+788 silly gunzTarPerm extractEntry lib/rules/no-catch-shadow.js
+789 silly gunzTarPerm extractEntry lib/rules/no-class-assign.js
+790 silly gunzTarPerm extractEntry lib/rules/no-compare-neg-zero.js
+791 silly gunzTarPerm extractEntry lib/rules/no-cond-assign.js
+792 silly gunzTarPerm extractEntry lib/rules/no-confusing-arrow.js
+793 silly gunzTarPerm extractEntry lib/rules/no-console.js
+794 silly gunzTarPerm extractEntry lib/rules/no-const-assign.js
+795 silly gunzTarPerm extractEntry lib/rules/no-constant-condition.js
+796 silly gunzTarPerm extractEntry lib/rules/no-constructor-return.js
+797 silly gunzTarPerm extractEntry lib/rules/no-continue.js
+798 silly gunzTarPerm extractEntry lib/rules/no-control-regex.js
+799 silly gunzTarPerm extractEntry lib/rules/no-debugger.js
+800 silly gunzTarPerm extractEntry lib/rules/no-delete-var.js
+801 silly gunzTarPerm extractEntry lib/rules/no-div-regex.js
+802 silly gunzTarPerm extractEntry lib/rules/no-dupe-args.js
+803 silly gunzTarPerm extractEntry lib/rules/no-dupe-class-members.js
+804 silly gunzTarPerm extractEntry lib/rules/no-dupe-else-if.js
+805 silly gunzTarPerm extractEntry lib/rules/no-dupe-keys.js
+806 silly gunzTarPerm extractEntry lib/rules/no-duplicate-case.js
+807 silly gunzTarPerm extractEntry lib/rules/no-duplicate-imports.js
+808 silly gunzTarPerm extractEntry lib/rules/no-else-return.js
+809 silly gunzTarPerm extractEntry lib/rules/no-empty-character-class.js
+810 silly gunzTarPerm extractEntry lib/rules/no-empty-function.js
+811 silly gunzTarPerm extractEntry lib/rules/no-empty-pattern.js
+812 silly gunzTarPerm extractEntry lib/rules/no-empty.js
+813 silly gunzTarPerm extractEntry lib/rules/no-eq-null.js
+814 silly gunzTarPerm extractEntry lib/rules/no-eval.js
+815 silly gunzTarPerm extractEntry lib/rules/no-ex-assign.js
+816 silly gunzTarPerm extractEntry lib/rules/no-extend-native.js
+817 silly gunzTarPerm extractEntry lib/rules/no-extra-bind.js
+818 silly gunzTarPerm extractEntry lib/rules/no-extra-boolean-cast.js
+819 silly gunzTarPerm extractEntry lib/rules/no-extra-label.js
+820 silly gunzTarPerm extractEntry lib/rules/no-extra-parens.js
+821 silly gunzTarPerm extractEntry lib/rules/no-extra-semi.js
+822 silly gunzTarPerm extractEntry lib/rules/no-fallthrough.js
+823 silly gunzTarPerm extractEntry lib/rules/no-floating-decimal.js
+824 silly gunzTarPerm extractEntry lib/rules/no-func-assign.js
+825 silly gunzTarPerm extractEntry lib/rules/no-global-assign.js
+826 silly gunzTarPerm extractEntry lib/rules/no-implicit-coercion.js
+827 silly gunzTarPerm extractEntry lib/rules/no-implicit-globals.js
+828 silly gunzTarPerm extractEntry lib/rules/no-implied-eval.js
+829 silly gunzTarPerm extractEntry lib/rules/no-import-assign.js
+830 silly gunzTarPerm extractEntry lib/rules/no-inline-comments.js
+831 silly gunzTarPerm extractEntry lib/rules/no-inner-declarations.js
+832 silly gunzTarPerm extractEntry lib/rules/no-invalid-regexp.js
+833 silly gunzTarPerm extractEntry lib/rules/no-invalid-this.js
+834 silly gunzTarPerm extractEntry lib/rules/no-irregular-whitespace.js
+835 silly gunzTarPerm extractEntry lib/rules/no-iterator.js
+836 silly gunzTarPerm extractEntry lib/rules/no-label-var.js
+837 silly gunzTarPerm extractEntry lib/rules/no-labels.js
+838 silly gunzTarPerm extractEntry lib/rules/no-lone-blocks.js
+839 silly gunzTarPerm extractEntry lib/rules/no-lonely-if.js
+840 silly gunzTarPerm extractEntry lib/rules/no-loop-func.js
+841 silly gunzTarPerm extractEntry lib/rules/no-loss-of-precision.js
+842 silly gunzTarPerm extractEntry lib/rules/no-magic-numbers.js
+843 silly gunzTarPerm extractEntry lib/rules/no-misleading-character-class.js
+844 silly gunzTarPerm extractEntry lib/rules/no-mixed-operators.js
+845 silly gunzTarPerm extractEntry lib/rules/no-mixed-requires.js
+846 silly gunzTarPerm extractEntry lib/rules/no-mixed-spaces-and-tabs.js
+847 silly gunzTarPerm extractEntry lib/rules/no-multi-assign.js
+848 silly gunzTarPerm extractEntry lib/rules/no-multi-spaces.js
+849 silly gunzTarPerm extractEntry lib/rules/no-multi-str.js
+850 silly gunzTarPerm extractEntry lib/rules/no-multiple-empty-lines.js
+851 silly gunzTarPerm extractEntry lib/rules/no-native-reassign.js
+852 silly gunzTarPerm extractEntry lib/rules/no-negated-condition.js
+853 silly gunzTarPerm extractEntry lib/rules/no-negated-in-lhs.js
+854 silly gunzTarPerm extractEntry lib/rules/no-nested-ternary.js
+855 silly gunzTarPerm extractEntry lib/rules/no-new-func.js
+856 silly gunzTarPerm extractEntry lib/rules/no-new-object.js
+857 silly gunzTarPerm extractEntry lib/rules/no-new-require.js
+858 silly gunzTarPerm extractEntry lib/rules/no-new-symbol.js
+859 silly gunzTarPerm extractEntry lib/rules/no-new-wrappers.js
+860 silly gunzTarPerm extractEntry lib/rules/no-new.js
+861 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-plugin-import-21a4627b/node_modules is being purged
+862 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-plugin-import-21a4627b/node_modules
+863 silly gunzTarPerm extractEntry lib/rules/no-obj-calls.js
+864 silly gunzTarPerm extractEntry lib/rules/no-octal-escape.js
+865 silly gunzTarPerm extractEntry lib/rules/no-octal.js
+866 silly gunzTarPerm extractEntry lib/rules/no-param-reassign.js
+867 silly gunzTarPerm extractEntry lib/rules/no-path-concat.js
+868 silly gunzTarPerm extractEntry lib/rules/no-plusplus.js
+869 silly gunzTarPerm extractEntry lib/rules/no-process-env.js
+870 silly gunzTarPerm extractEntry lib/rules/no-process-exit.js
+871 silly gunzTarPerm extractEntry lib/rules/no-promise-executor-return.js
+872 silly gunzTarPerm extractEntry lib/rules/no-proto.js
+873 silly gunzTarPerm extractEntry lib/rules/no-prototype-builtins.js
+874 silly gunzTarPerm extractEntry lib/rules/no-redeclare.js
+875 silly gunzTarPerm extractEntry lib/rules/no-regex-spaces.js
+876 silly gunzTarPerm extractEntry lib/rules/no-restricted-exports.js
+877 silly gunzTarPerm extractEntry lib/rules/no-restricted-globals.js
+878 silly gunzTarPerm extractEntry lib/rules/no-restricted-imports.js
+879 silly gunzTarPerm extractEntry lib/rules/no-restricted-modules.js
+880 silly gunzTarPerm extractEntry lib/rules/no-restricted-properties.js
+881 silly gunzTarPerm extractEntry lib/rules/no-restricted-syntax.js
+882 silly gunzTarPerm extractEntry lib/rules/no-return-assign.js
+883 silly gunzTarPerm extractEntry lib/rules/no-return-await.js
+884 silly gunzTarPerm extractEntry lib/rules/no-script-url.js
+885 silly gunzTarPerm extractEntry lib/rules/no-self-assign.js
+886 silly gunzTarPerm extractEntry lib/rules/no-self-compare.js
+887 silly gunzTarPerm extractEntry lib/rules/no-sequences.js
+888 silly gunzTarPerm extractEntry lib/rules/no-setter-return.js
+889 silly gunzTarPerm extractEntry lib/rules/no-shadow-restricted-names.js
+890 silly gunzTarPerm extractEntry lib/rules/no-shadow.js
+891 silly gunzTarPerm extractEntry lib/rules/no-spaced-func.js
+892 silly gunzTarPerm extractEntry lib/rules/no-sparse-arrays.js
+893 silly gunzTarPerm extractEntry lib/rules/no-sync.js
+894 silly gunzTarPerm extractEntry lib/rules/no-tabs.js
+895 silly gunzTarPerm extractEntry lib/rules/no-template-curly-in-string.js
+896 silly gunzTarPerm extractEntry lib/rules/no-ternary.js
+897 silly gunzTarPerm extractEntry lib/rules/no-this-before-super.js
+898 silly gunzTarPerm extractEntry lib/rules/no-throw-literal.js
+899 silly gunzTarPerm extractEntry lib/rules/no-trailing-spaces.js
+900 silly gunzTarPerm extractEntry lib/rules/no-undef-init.js
+901 silly gunzTarPerm extractEntry lib/rules/no-undef.js
+902 silly gunzTarPerm extractEntry lib/rules/no-undefined.js
+903 silly gunzTarPerm extractEntry lib/rules/no-underscore-dangle.js
+904 silly gunzTarPerm extractEntry lib/rules/no-unexpected-multiline.js
+905 silly gunzTarPerm extractEntry lib/rules/no-unmodified-loop-condition.js
+906 silly gunzTarPerm extractEntry lib/rules/no-unneeded-ternary.js
+907 silly gunzTarPerm extractEntry lib/rules/no-unreachable-loop.js
+908 silly gunzTarPerm extractEntry lib/rules/no-unreachable.js
+909 silly gunzTarPerm extractEntry lib/rules/no-unsafe-finally.js
+910 silly gunzTarPerm extractEntry lib/rules/no-unsafe-negation.js
+911 silly gunzTarPerm extractEntry lib/rules/no-unused-expressions.js
+912 silly gunzTarPerm extractEntry lib/rules/no-unused-labels.js
+913 silly gunzTarPerm extractEntry lib/rules/no-unused-vars.js
+914 silly gunzTarPerm extractEntry lib/rules/no-use-before-define.js
+915 silly gunzTarPerm extractEntry lib/rules/no-useless-backreference.js
+916 silly gunzTarPerm extractEntry lib/rules/no-useless-call.js
+917 silly gunzTarPerm extractEntry lib/rules/no-useless-catch.js
+918 silly gunzTarPerm extractEntry lib/rules/no-useless-computed-key.js
+919 silly gunzTarPerm extractEntry lib/rules/no-useless-concat.js
+920 silly gunzTarPerm extractEntry lib/rules/no-useless-constructor.js
+921 silly gunzTarPerm extractEntry lib/rules/no-useless-escape.js
+922 silly gunzTarPerm extractEntry lib/rules/no-useless-rename.js
+923 silly gunzTarPerm extractEntry lib/rules/no-useless-return.js
+924 silly gunzTarPerm extractEntry lib/rules/no-var.js
+925 silly gunzTarPerm extractEntry lib/rules/no-void.js
+926 silly gunzTarPerm extractEntry lib/rules/no-warning-comments.js
+927 silly gunzTarPerm extractEntry lib/rules/no-whitespace-before-property.js
+928 silly gunzTarPerm extractEntry lib/rules/no-with.js
+929 silly gunzTarPerm extractEntry lib/linter/node-event-generator.js
+930 silly gunzTarPerm extractEntry lib/rules/nonblock-statement-body-position.js
+931 silly gunzTarPerm extractEntry lib/init/npm-utils.js
+932 silly gunzTarPerm extractEntry lib/rules/object-curly-newline.js
+933 silly gunzTarPerm extractEntry lib/rules/object-curly-spacing.js
+934 silly gunzTarPerm extractEntry lib/rules/object-property-newline.js
+935 silly gunzTarPerm extractEntry lib/rules/object-shorthand.js
+936 silly gunzTarPerm extractEntry lib/rules/one-var-declaration-per-line.js
+937 silly gunzTarPerm extractEntry lib/rules/one-var.js
+938 silly gunzTarPerm extractEntry lib/rules/operator-assignment.js
+939 silly gunzTarPerm extractEntry lib/rules/operator-linebreak.js
+940 silly gunzTarPerm extractEntry lib/options.js
+941 silly gunzTarPerm extractEntry lib/rules/padded-blocks.js
+942 silly gunzTarPerm extractEntry lib/source-code/token-store/padded-token-cursor.js
+943 silly gunzTarPerm extractEntry lib/rules/padding-line-between-statements.js
+944 silly gunzTarPerm extractEntry lib/rules/prefer-arrow-callback.js
+945 silly gunzTarPerm extractEntry lib/rules/prefer-const.js
+946 silly gunzTarPerm extractEntry lib/rules/prefer-destructuring.js
+947 silly gunzTarPerm extractEntry lib/rules/prefer-exponentiation-operator.js
+948 silly gunzTarPerm extractEntry lib/rules/prefer-named-capture-group.js
+949 silly gunzTarPerm extractEntry lib/rules/prefer-numeric-literals.js
+950 silly gunzTarPerm extractEntry lib/rules/prefer-object-spread.js
+951 silly gunzTarPerm extractEntry lib/rules/prefer-promise-reject-errors.js
+952 silly gunzTarPerm extractEntry lib/rules/prefer-reflect.js
+953 silly gunzTarPerm extractEntry lib/rules/prefer-regex-literals.js
+954 silly gunzTarPerm extractEntry lib/rules/prefer-rest-params.js
+955 silly gunzTarPerm extractEntry lib/rules/prefer-spread.js
+956 silly gunzTarPerm extractEntry lib/rules/prefer-template.js
+957 silly gunzTarPerm extractEntry lib/rules/quote-props.js
+958 silly gunzTarPerm extractEntry lib/rules/quotes.js
+959 silly gunzTarPerm extractEntry lib/rules/radix.js
+960 silly gunzTarPerm extractEntry lib/shared/relative-module-resolver.js
+961 silly gunzTarPerm extractEntry lib/linter/report-translator.js
+962 silly gunzTarPerm extractEntry lib/rules/require-atomic-updates.js
+963 silly gunzTarPerm extractEntry lib/rules/require-await.js
+964 silly gunzTarPerm extractEntry lib/rules/require-jsdoc.js
+965 silly gunzTarPerm extractEntry lib/rules/require-unicode-regexp.js
+966 silly gunzTarPerm extractEntry lib/rules/require-yield.js
+967 silly gunzTarPerm extractEntry lib/rules/rest-spread-spacing.js
+968 silly gunzTarPerm extractEntry lib/linter/rule-fixer.js
+969 silly gunzTarPerm extractEntry lib/rule-tester/rule-tester.js
+970 silly gunzTarPerm extractEntry lib/linter/rules.js
+971 silly gunzTarPerm extractEntry lib/shared/runtime-info.js
+972 silly gunzTarPerm extractEntry lib/linter/safe-emitter.js
+973 silly gunzTarPerm extractEntry lib/rules/semi-spacing.js
+974 silly gunzTarPerm extractEntry lib/rules/semi-style.js
+975 silly gunzTarPerm extractEntry lib/rules/semi.js
+976 silly gunzTarPerm extractEntry lib/source-code/token-store/skip-cursor.js
+977 silly gunzTarPerm extractEntry lib/rules/sort-imports.js
+978 silly gunzTarPerm extractEntry lib/rules/sort-keys.js
+979 silly gunzTarPerm extractEntry lib/rules/sort-vars.js
+980 silly gunzTarPerm extractEntry lib/linter/source-code-fixer.js
+981 silly gunzTarPerm extractEntry lib/init/source-code-utils.js
+982 silly gunzTarPerm extractEntry lib/source-code/source-code.js
+983 silly gunzTarPerm extractEntry lib/rules/space-before-blocks.js
+984 silly gunzTarPerm extractEntry lib/rules/space-before-function-paren.js
+985 silly gunzTarPerm extractEntry lib/rules/space-in-parens.js
+986 silly gunzTarPerm extractEntry lib/rules/space-infix-ops.js
+987 silly gunzTarPerm extractEntry lib/rules/space-unary-ops.js
+988 silly gunzTarPerm extractEntry lib/rules/spaced-comment.js
+989 silly gunzTarPerm extractEntry lib/rules/strict.js
+990 silly gunzTarPerm extractEntry lib/cli-engine/formatters/stylish.js
+991 silly gunzTarPerm extractEntry lib/rules/switch-colon-spacing.js
+992 silly gunzTarPerm extractEntry lib/rules/symbol-description.js
+993 silly gunzTarPerm extractEntry lib/cli-engine/formatters/table.js
+994 silly gunzTarPerm extractEntry lib/cli-engine/formatters/tap.js
+995 silly gunzTarPerm extractEntry lib/rules/template-curly-spacing.js
+996 silly gunzTarPerm extractEntry lib/rules/template-tag-spacing.js
+997 silly gunzTarPerm extractEntry lib/linter/timing.js
+998 silly gunzTarPerm extractEntry lib/shared/traverser.js
+999 silly gunzTarPerm extractEntry lib/shared/types.js
+1000 silly gunzTarPerm extractEntry lib/rules/unicode-bom.js
+1001 silly gunzTarPerm extractEntry lib/cli-engine/formatters/unix.js
+1002 silly gunzTarPerm extractEntry lib/rules/use-isnan.js
+1003 silly gunzTarPerm extractEntry lib/source-code/token-store/utils.js
+1004 silly gunzTarPerm extractEntry lib/rules/valid-jsdoc.js
+1005 silly gunzTarPerm extractEntry lib/rules/valid-typeof.js
+1006 silly gunzTarPerm extractEntry lib/rules/vars-on-top.js
+1007 silly gunzTarPerm extractEntry lib/cli-engine/formatters/visualstudio.js
+1008 silly gunzTarPerm extractEntry lib/rules/wrap-iife.js
+1009 silly gunzTarPerm extractEntry lib/rules/wrap-regex.js
+1010 silly gunzTarPerm extractEntry lib/cli-engine/xml-escape.js
+1011 silly gunzTarPerm extractEntry lib/rules/yield-star-spacing.js
+1012 silly gunzTarPerm extractEntry lib/rules/yoda.js
+1013 silly gunzTarPerm extractEntry conf/category-list.json
+1014 silly gunzTarPerm extractEntry package.json
+1015 silly gunzTarPerm extractEntry conf/replacements.json
+1016 silly gunzTarPerm extractEntry CHANGELOG.md
+1017 silly gunzTarPerm extractEntry README.md
+1018 silly gunzTarPerm extractEntry messages/all-files-ignored.txt
+1019 silly gunzTarPerm extractEntry messages/extend-config-missing.txt
+1020 silly gunzTarPerm extractEntry messages/failed-to-read-json.txt
+1021 silly gunzTarPerm extractEntry messages/file-not-found.txt
+1022 silly gunzTarPerm extractEntry messages/no-config-found.txt
+1023 silly gunzTarPerm extractEntry messages/plugin-conflict.txt
+1024 silly gunzTarPerm extractEntry messages/plugin-invalid.txt
+1025 silly gunzTarPerm extractEntry messages/plugin-missing.txt
+1026 silly gunzTarPerm extractEntry messages/print-config-with-directory-path.txt
+1027 silly gunzTarPerm extractEntry messages/whitespace-found.txt
+1028 silly gentlyRm /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-d47b54ad/node_modules is being purged
+1029 verbose gentlyRm don't care about contents; nuking /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-d47b54ad/node_modules
+1030 silly doParallel preinstall 8
+1031 silly preinstall acorn@7.4.1 /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/acorn-09f4418e
+1032 info lifecycle acorn@7.4.1~preinstall: acorn@7.4.1
+1033 silly preinstall eslint@7.13.0 /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-d47b54ad
+1034 info lifecycle eslint@7.13.0~preinstall: eslint@7.13.0
+1035 silly preinstall eslint-config-airbnb-base@14.2.1 /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-config-airbnb-base-b61761ab
+1036 info lifecycle eslint-config-airbnb-base@14.2.1~preinstall: eslint-config-airbnb-base@14.2.1
+1037 silly preinstall doctrine@1.5.0 /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/doctrine-961b8641
+1038 info lifecycle doctrine@1.5.0~preinstall: doctrine@1.5.0
+1039 silly preinstall ms@2.0.0 /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/ms-b699249d
+1040 info lifecycle ms@2.0.0~preinstall: ms@2.0.0
+1041 silly preinstall debug@2.6.9 /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/debug-c69154a7
+1042 info lifecycle debug@2.6.9~preinstall: debug@2.6.9
+1043 silly preinstall eslint-plugin-import@2.22.1 /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/eslint-plugin-import-21a4627b
+1044 info lifecycle eslint-plugin-import@2.22.1~preinstall: eslint-plugin-import@2.22.1
+1045 silly preinstall promptly@3.2.0 /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging/promptly-7a71664d
+1046 info lifecycle promptly@3.2.0~preinstall: promptly@3.2.0
+1047 silly lifecycle acorn@7.4.1~preinstall: no script for preinstall, continuing
+1048 silly lifecycle eslint@7.13.0~preinstall: no script for preinstall, continuing
+1049 silly lifecycle eslint-config-airbnb-base@14.2.1~preinstall: no script for preinstall, continuing
+1050 silly lifecycle doctrine@1.5.0~preinstall: no script for preinstall, continuing
+1051 silly lifecycle ms@2.0.0~preinstall: no script for preinstall, continuing
+1052 silly lifecycle debug@2.6.9~preinstall: no script for preinstall, continuing
+1053 silly lifecycle eslint-plugin-import@2.22.1~preinstall: no script for preinstall, continuing
+1054 silly lifecycle promptly@3.2.0~preinstall: no script for preinstall, continuing
+1055 silly doReverseSerial remove 0
+1056 silly doSerial move 0
+1057 silly doSerial finalize 8
+1058 silly finalize /mnt/e/work/repos/hexlet-challenges-js/node_modules/acorn
+1059 silly finalize /mnt/e/work/repos/hexlet-challenges-js/node_modules/eslint
+1060 verbose unlock done using /home/vellio/.npm/_locks/staging-c4455fdc351b3c8b.lock for /mnt/e/work/repos/hexlet-challenges-js/node_modules/.staging
+1061 silly rollbackFailedOptional Starting
+1062 silly rollbackFailedOptional Finishing
+1063 silly runTopLevelLifecycles Starting
+1064 silly runTopLevelLifecycles Finishing
+1065 silly install printInstalled
+1066 warn hexlet-challenges@1.0.0 No description
+1067 warn hexlet-challenges@1.0.0 No repository field.
+1068 verbose stack Error: EACCES: permission denied, rename '/mnt/e/work/repos/hexlet-challenges-js/node_modules/eslint' -> '/mnt/e/work/repos/hexlet-challenges-js/node_modules/.eslint.DELETE'
+1068 verbose stack     at moveAway (/usr/share/npm/lib/install/action/finalize.js:38:5)
+1068 verbose stack     at destStatted (/usr/share/npm/lib/install/action/finalize.js:27:7)
+1068 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+1068 verbose stack
+1068 verbose stack Error: EACCES: permission denied, rename '/mnt/e/work/repos/hexlet-challenges-js/node_modules/eslint' -> '/mnt/e/work/repos/hexlet-challenges-js/node_modules/.eslint.DELETE'
+1068 verbose stack     at Error (native)
+1069 verbose cwd /mnt/e/work/repos/hexlet-challenges-js
+1070 error Linux 4.4.0-19041-Microsoft
+1071 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install"
+1072 error node v4.2.6
+1073 error npm  v3.5.2
+1074 error path /mnt/e/work/repos/hexlet-challenges-js/node_modules/eslint
+1075 error code EACCES
+1076 error errno -13
+1077 error syscall rename
+1078 error Error: EACCES: permission denied, rename '/mnt/e/work/repos/hexlet-challenges-js/node_modules/eslint' -> '/mnt/e/work/repos/hexlet-challenges-js/node_modules/.eslint.DELETE'
+1078 error     at moveAway (/usr/share/npm/lib/install/action/finalize.js:38:5)
+1078 error     at destStatted (/usr/share/npm/lib/install/action/finalize.js:27:7)
+1078 error     at FSReqWrap.oncomplete (fs.js:82:15)
+1078 error
+1078 error Error: EACCES: permission denied, rename '/mnt/e/work/repos/hexlet-challenges-js/node_modules/eslint' -> '/mnt/e/work/repos/hexlet-challenges-js/node_modules/.eslint.DELETE'
+1078 error     at Error (native)
+1078 error  { [Error: EACCES: permission denied, rename '/mnt/e/work/repos/hexlet-challenges-js/node_modules/eslint' -> '/mnt/e/work/repos/hexlet-challenges-js/node_modules/.eslint.DELETE'] parent: 'hexlet-challenges' }
+1079 error Please try running this command again as root/Administrator.
+1080 verbose exit [ -13, true ]

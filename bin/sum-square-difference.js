@@ -1,11 +1,11 @@
 // 2. Сумма квадратов
 
-import promptly from 'promptly';
+import readlineSync from 'readline-sync';
 import { sumSquareDefference } from '../src/sumSquareDifference.js';
 
-const launchGame = async () => {
-  const value = await promptly.prompt('Input n ');
+const launch = async () => {
+  const value = readlineSync.question('Input n ');
   const result = sumSquareDefference(value);
   return console.log(result);
 };
-launchGame();
+launch();

@@ -1,12 +1,12 @@
 // 4. Разница углов
 
-import promptly from 'promptly';
+import readlineSync from 'readline-sync';
 import { diff } from '../src/diff.js';
 
-const launchGame = async () => {
-  const firstCorner = await promptly.prompt('Input first corner ');
-  const secondCorner = await promptly.prompt('Input second corner');
+const launch = async () => {
+  const firstCorner = readlineSync.question('Input first corner ');
+  const secondCorner = readlineSync.question('Input second corner ');
   const result = diff(firstCorner, secondCorner);
   return console.log(result);
 };
-launchGame();
+launch();

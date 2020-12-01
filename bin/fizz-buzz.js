@@ -1,12 +1,12 @@
 // 7. Найди Fizz и Buzz
 
-import promptly from 'promptly';
+import readlineSync from 'readline-sync';
 import { fizzBuzz } from '../src/fizBuzz.js';
 
-const launchGame = async () => {
-  const begin = await promptly.prompt('Input begin number ');
-  const end = await promptly.prompt('Input end number ');
+const launch = async () => {
+  const begin = readlineSync.question('Input begin number ');
+  const end = readlineSync.question('Input end number ');
   fizzBuzz(Number(begin), Number(end));
 };
 
-launchGame();
+launch();

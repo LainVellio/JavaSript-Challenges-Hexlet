@@ -1,12 +1,12 @@
 // 8. Функция Аккермана
 
-import promptly from 'promptly';
+import readlineSync from 'readline-sync';
 import { ackermannFunction } from '../src/ackermannFunction.js';
 
-const launchGame = async () => {
-  const m = await promptly.prompt('Input m ');
-  const n = await promptly.prompt('Input n ');
+const launch = async () => {
+  const m = readlineSync.question('Input m ');
+  const n = readlineSync.question('Input n ');
   const result = ackermannFunction(Number(m), Number(n));
   return console.log(result);
 };
-launchGame();
+launch();

@@ -1,10 +1,10 @@
 // 9. Форматированное время
 
-import promptly from 'promptly';
+import readlineSync from 'readline-sync';
 import { formattedTime } from '../src/formattedTime.js';
 
 const launch = async () => {
-  const minutes = await promptly.prompt('Input number of minutes ');
+  const minutes = readlineSync.question('Input number of minutes ');
   const result = formattedTime(minutes);
   return console.log(result);
 };

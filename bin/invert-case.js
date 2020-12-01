@@ -1,11 +1,11 @@
 // 3. Инвертированный регистр
 
-import promptly from 'promptly';
+import readlineSync from 'readline-sync';
 import { invertCase } from '../src/invertCase.js';
 
-const launchGame = async () => {
-  const value = await promptly.prompt('Input string ');
+const launch = async () => {
+  const value = readlineSync.question('Input string ');
   const result = invertCase(value);
   return console.log(result);
 };
-launchGame();
+launch();

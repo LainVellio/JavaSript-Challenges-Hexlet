@@ -1,11 +1,11 @@
 // 5. Сбалансированы ли скобки?
 
-import promptly from 'promptly';
+import readlineSync from 'readline-sync';
 import { areBracketsBalanced } from '../src/areBracketsBalanced.js';
 
-const launchGame = async () => {
-  const string = await promptly.prompt('Input string ', { default: ' ' });
+const launch = async () => {
+  const string = readlineSync.question('Input string ', { default: ' ' });
   const result = areBracketsBalanced(string);
   return console.log(result);
 };
-launchGame();
+launch();
