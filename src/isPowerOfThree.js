@@ -1,3 +1,5 @@
+// 9. Степень тройки
+
 export const isPowerOfThree = (num) => {
   if (num === 3) {
     return true;
