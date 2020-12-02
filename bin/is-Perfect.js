@@ -1,4 +1,4 @@
-// 11. Идеальные числа
+// 13. Идеальные числа
 
 import readlineSync from 'readline-sync';
 import { isPerfect } from '../src/isPerfect.js';

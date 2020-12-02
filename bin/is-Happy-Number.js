@@ -1,4 +1,4 @@
-// 10. Счастливые числа
+// 11. Счастливые числа
 
 import readlineSync from 'readline-sync';
 import { isHappyNumber } from '../src/isHappyNumber.js';
