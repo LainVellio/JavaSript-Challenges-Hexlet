@@ -1,4 +1,4 @@
-// 10. Счастливые числа
+// 11. Счастливые числа
 
 import { sumOfsquareDigits } from './utils.js';
 

@@ -1,4 +1,4 @@
-// 11. Идеальные числа
+// 12. Идеальные числа
 
 export const isPerfect = (num) => {
   let result = 1;
