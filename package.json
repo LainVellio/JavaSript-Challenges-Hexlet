@@ -20,7 +20,8 @@
     "is-Power-Of-Three": "bin/is-Power-Of-Three.js",
     "is-Happy-Number.js": "bin/is-Happy-Number.js",
     "is-Perfect": "bin/is-Perfect.js",
-    "reverse": "bin/reverse.js"
+    "reverse": "bin/reverse.js",
+    "solution": "bin/solution.js"
   },
   "author": "",
   "license": "ISC",

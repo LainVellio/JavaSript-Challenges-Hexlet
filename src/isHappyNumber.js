@@ -1,6 +1,12 @@
 // 11. Счастливые числа
 
-import { sumOfsquareDigits } from './utils.js';
+const sumOfsquareDigits = (num) => {
+  let result = 0;
+  for (let i = 0; i < String(num).length; i += 1) {
+    result += Number(String(num)[i]) ** 2;
+  }
+  return result;
+};
 
 export const isHappyNumber = (num) => {
   let result = num;
