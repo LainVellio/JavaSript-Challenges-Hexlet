@@ -9,6 +9,10 @@ const sumSquareDefference = (n) => {
     return 'Вы ввели дробное число';
   }
 
+  if (n < 0) {
+    return 'Вы ввели отрицательное число';
+  }
+
   let sumSquare = 0;
   let squareSum = 0;
   for (let i = 1; i <= n; i += 1) {

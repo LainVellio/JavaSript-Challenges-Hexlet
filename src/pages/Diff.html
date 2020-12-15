@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+
+        <script src="../scripts/browser/diff.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Разница углов</title>
+
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Разница углов</h1>
+            </header>
+            <main>
+                <p>Угол между лучами измеряется двумя способами:<br>
+                <img src="../images/image_diff.png" alt="Углы между лучами">
+                <p><strong>Программа принимает на вход два угла от 0 до 360 и возвращает наименьшую разницу между ними.</strong></p>
+                
+                <form name="program">
+                    <input class="input-1" name="a" placeholder="Введите угол один" />
+                    <input class="input-1" name="b" placeholder="Введите угол два" />
+                    <input class="button" type="button" value="Выполнить"  onclick="getResult()" />
+                </form>
+            </main>
+            <section class="result">
+                <h2>Результат</h2>
+                <div id="result"></div>
+                <a class="back" href="../../index.html">Вернуться в меню программ</a>
+            </section>
+            <section>
+               
+            </section>
+        </div>
+    </body>
+</html>

@@ -1,6 +1,6 @@
 // 5. Сбалансированы ли скобки?
 
-export const areBracketsBalanced = (str) => {
+const areBracketsBalanced = (str) => {
   if (str.replace(' ', '') === '') {
     return true;
   }
@@ -12,4 +12,9 @@ export const areBracketsBalanced = (str) => {
   return true;
 };
 
-export default { areBracketsBalanced };
+// eslint-disable-next-line no-unused-vars
+const getResult = () => {
+  const formInput = document.forms.program;
+  const a = formInput.a.value;
+  document.getElementById('result').textContent = areBracketsBalanced(a);
+};
