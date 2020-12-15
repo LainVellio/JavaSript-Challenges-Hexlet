@@ -1,6 +1,6 @@
 // 2. Сумма квадратов
 
-export const sumSquareDefference = (n) => {
+const sumSquareDefference = (n) => {
   let sumSquare = 0;
   let squareSum = 0;
   for (let i = 1; i <= n; i += 1) {
@@ -10,4 +10,10 @@ export const sumSquareDefference = (n) => {
   return squareSum ** 2 - sumSquare;
 };
 
-export default { sumSquareDefference };
+// eslint-disable-next-line no-unused-vars
+const getResult = () => {
+  const formInput = document.forms.program;
+  const a = parseInt(formInput.a.value, 10);
+  console.log(a);
+  document.getElementById('result').textContent = sumSquareDefference(a);
+};

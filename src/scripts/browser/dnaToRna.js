@@ -25,8 +25,9 @@ const dnaToRna = (chainDna) => {
   return chainRna;
 };
 
+// eslint-disable-next-line no-unused-vars
 const getResult = () => {
-  const formInput = document.forms.program; // получаем ссылку на форму
-  const a = formInput.a.value; // преобразуем данные с инпута в цифру
-  document.getElementById('result').textContent = dnaToRna(a); // показывает результыт в инпуте
+  const formInput = document.forms.program;
+  const a = formInput.a.value;
+  document.getElementById('result').textContent = dnaToRna(a);
 };
