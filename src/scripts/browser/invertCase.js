@@ -1,6 +1,6 @@
 // 3. Инвертированный регистр
 
-export const invertCase = (str) => {
+const invertCase = (str) => {
   let result = '';
   for (let i = 0; i < str.length; i += 1) {
     if (str[i] === str[i].toUpperCase()) {
@@ -10,4 +10,9 @@ export const invertCase = (str) => {
   return result;
 };
 
-export default { invertCase };
+// eslint-disable-next-line no-unused-vars
+const getResult = () => {
+  const formInput = document.forms.program;
+  const a = formInput.a.value;
+  document.getElementById('result').textContent = invertCase(a);
+};
