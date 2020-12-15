@@ -1,7 +1,7 @@
 // 6. Переворот числа
 
 import readlineSync from 'readline-sync';
-import { invertNumber } from '../src/invertNumber.js';
+import { invertNumber } from '../src/scripts/programs/invertNumber.js';
 
 const launch = () => {
   const num = readlineSync.question('Input string ');

@@ -1,7 +1,7 @@
 // 7. Найди Fizz и Buzz
 
 import readlineSync from 'readline-sync';
-import { fizzBuzz } from '../src/fizBuzz.js';
+import { fizzBuzz } from '../src/scripts/programs/fizBuzz.js';
 
 const launch = () => {
   const begin = readlineSync.question('Input begin number ');

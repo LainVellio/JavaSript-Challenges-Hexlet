@@ -1,7 +1,7 @@
-// 15. Без двух нулей
+// 14. Без двух нулей
 
 import readlineSync from 'readline-sync';
-import { solution } from '../src/solution.js';
+import { solution } from '../src/scripts/programs/solution.js';
 
 const launch = () => {
   const numZeros = readlineSync.question('Enter the number of digits zero ');

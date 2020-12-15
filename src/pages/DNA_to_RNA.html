@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+
+        <script src="../scripts/browser/dnaToRna.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Преобразование DNA в RNA</title>
+
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Преобразование DNA в RNA</h1>
+            </header>
+            <main>
+                <p>ДНК и РНК это последовательности нуклеотидов.
+                <br>Четыре нуклеотида в ДНК это аденин (A), цитозин (C), гуанин (G) и тимин (T).
+                <br>Четыре нуклеотида в РНК это аденин (A), цитозин (C), гуанин (G) и урацил (U).
+                <br>Цепь РНК составляется на основе цепи ДНК последовательной заменой каждого нуклеотида:
+                <br>G &#8594; C, C &#8594; G, T &#8594; A, A &#8594; U
+                </p>
+                <p>Программа принимает на вход цепь ДНК и возвращает соответсвующую ей цепь РНК (совершает транскрипцию РНК).</p>
+                
+                <form name="program">
+                    <input class="input-1" name="a" placeholder="Введите ДНК" />
+                    <input class="button" type="button" value="Выполнить"  onclick="getResult()" />
+                </form>
+            </main>
+            <section class="result">
+                <h2>Результат</h2>
+                <div id="result"></div>
+                <a class="back" href="../../index.html">Вернуться в меню программ</a>
+            </section>
+            <section>
+               
+            </section>
+        </div>
+    </body>
+</html>

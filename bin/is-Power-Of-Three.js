@@ -1,7 +1,7 @@
 // 9. Степень тройки
 
 import readlineSync from 'readline-sync';
-import { isPowerOfThree } from '../src/isPowerOfThree.js';
+import { isPowerOfThree } from '../src/scripts/programs/isPowerOfThree.js';
 
 const launch = () => {
   const value = readlineSync.question('Input number ');

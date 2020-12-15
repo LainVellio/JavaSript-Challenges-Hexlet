@@ -1,7 +1,7 @@
 // 5. Сбалансированы ли скобки?
 
 import readlineSync from 'readline-sync';
-import { areBracketsBalanced } from '../src/areBracketsBalanced.js';
+import { areBracketsBalanced } from '../src/scripts/programs/areBracketsBalanced.js';
 
 const launch = () => {
   const string = readlineSync.question('Input string ', { default: ' ' });

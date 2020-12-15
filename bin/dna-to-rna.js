@@ -4,7 +4,7 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable guard-for-in */
 // eslint-disable-next-line import/extensions
-import { dnaToRna } from '../src/dnaToRna.js';
+import { dnaToRna } from '../src/scripts/programs/dnaToRna.js';
 
 const tests = [['ACGTGGTCTTAA', 'UGCACCAGAAUU'], ['CCGTA', 'GGCAU'], ['', ''], ['ACNTG', null]];
 

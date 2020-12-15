@@ -1,7 +1,7 @@
 // 4. Разница углов
 
 import readlineSync from 'readline-sync';
-import { diff } from '../src/diff.js';
+import { diff } from '../src/scripts/programs/diff.js';
 
 const launch = () => {
   const firstCorner = readlineSync.question('Input first corner ');

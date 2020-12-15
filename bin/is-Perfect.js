@@ -1,7 +1,7 @@
-// 13. Идеальные числа
+// 12. Идеальные числа
 
 import readlineSync from 'readline-sync';
-import { isPerfect } from '../src/isPerfect.js';
+import { isPerfect } from '../src/scripts/programs/isPerfect.js';
 
 const launch = () => {
   const value = readlineSync.question('Input number ');
