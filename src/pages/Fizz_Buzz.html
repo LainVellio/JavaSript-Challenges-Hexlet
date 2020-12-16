@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+
+        <script src="../scripts/browser/fizBuzz.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Найди Fizz и Buzz</title>
+
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Найди Fizz и Buzz</h1>
+            </header>
+            <main>
+                <p><strong>Программа выводит числа в диапазоне от первого значения, определяющего
+                    начало диапазона, до последнего определяющего его конец. При этом:</strong></p>
+              
+                <ul>
+                    <li>Если число делится без остатка на <strong>3</strong>, то вместо него выводится слово <strong>Fizz</strong></li>
+                    <li>Если число делится без остатка на <strong>5</strong>, то вместо него выводится слово <strong>Buzz</strong></li>
+                    <li>Если число делится без остатка и на <strong>3</strong>, и на <strong>5</strong>, то вместо числа выводится слово <strong>FizzBuzz</strong></li>
+                    <li>В остальных случаях выводится само число</li>
+                    <li>Значения начала и конца диапазона должны быть натуральными числами</li>
+                </ul>
+              
+                <form name="program">
+                    <input class="input-1" name="a" placeholder="Введите начало диапазона" />
+                    <input class="input-1" name="b" placeholder="Введите конец диапазона" />
+                    <input class="button" type="button" value="Выполнить"  onclick="getResult()" />
+                </form>
+            </main>
+            <section class="result">
+                <h2>Результат</h2>
+                <div id="result"></div>
+                <a class="back" href="../../index.html">Вернуться в меню программ</a>
+            </section>
+            <section>
+               
+            </section>
+        </div>
+    </body>
+</html>
