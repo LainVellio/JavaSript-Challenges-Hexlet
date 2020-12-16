@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+
+        <script src="../scripts/browser/isHappyTicket.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Счастливый билет</title>
+
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Счастливый билет</h1>
+            </header>
+            <main>
+                <p>"Счастливым" называют билет с номером, в котором сумма первой половины цифр 
+                    равна сумме второй половины цифр. Номера могут быть произвольной длины, 
+                    с единственным условием, что количество цифр всегда чётно, например: 
+                    33 или 2341 и так далее.</p>
+                <p>Билет с номером 385916 — счастливый, так как 3 + 8 + 5 = 9 + 1 + 6. 
+                    Билет с номером 231002 не является счастливым, так как 2 + 3 + 1 != 0 + 0 + 2.</p>
+                <p><strong>Программа проверяет является ли билет счастливым или обычным.</strong></p>
+                
+                <form name="program">
+                    <input class="input-1" name="a" placeholder="Введите номер билета" />
+                    <input class="button" type="button" value="Выполнить"  onclick="getResult()" />
+                </form>
+            </main>
+            <section class="result">
+                <h2>Результат</h2>
+                <div id="result"></div>
+                <a class="back" href="../../index.html">Вернуться в меню программ</a>
+            </section>
+            <section>
+               
+            </section>
+        </div>
+    </body>
+</html>

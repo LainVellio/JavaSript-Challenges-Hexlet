@@ -1,6 +1,18 @@
 // 10. Счастливый билет
 
-export const isHappyTicket = (num) => {
+const isHappyTicket = (num) => {
+  if (Number.isNaN(Number(num))) {
+    return 'Вы ввели неверное значение';
+  }
+
+  if (Number(num) - Math.round(Number(num)) !== 0) {
+    return 'Вы ввели дробное число';
+  }
+
+  if (Number(num) < 0) {
+    return 'Вы ввели отрицательное число';
+  }
+
   let firstHalf = Number(num[0]);
   let secondHalf = Number(num[num.length / 2]);
 
@@ -10,9 +22,14 @@ export const isHappyTicket = (num) => {
   }
 
   if (firstHalf === secondHalf) {
-    return true;
+    return 'Билет счастливый';
   }
-  return false;
+  return 'Билет обычный';
 };
 
-export default { isHappyTicket };
+// eslint-disable-next-line no-unused-vars
+const getResult = () => {
+  const formInput = document.forms.program;
+  const a = formInput.a.value;
+  document.getElementById('result').textContent = isHappyTicket(a);
+};
