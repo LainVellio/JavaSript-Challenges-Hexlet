@@ -1,7 +1,7 @@
 // 11. Счастливые числа
 
 import readlineSync from 'readline-sync';
-import { isHappyNumber } from '../src/scripts/programs/isHappyNumber.js';
+import { isHappyNumber } from '../src/scripts/node/isHappyNumber.js';
 
 const launch = () => {
   const value = readlineSync.question('Input number ');

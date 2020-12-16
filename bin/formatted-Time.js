@@ -1,7 +1,7 @@
 // 9. Форматированное время
 
 import readlineSync from 'readline-sync';
-import { formattedTime } from '../src/scripts/programs/formattedTime.js';
+import { formattedTime } from '../src/scripts/node/formattedTime.js';
 
 const launch = () => {
   const minutes = readlineSync.question('Input number of minutes ');

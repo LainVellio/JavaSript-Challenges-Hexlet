@@ -1,7 +1,7 @@
 // 13. Переворот строки
 
 import readlineSync from 'readline-sync';
-import { reverse } from '../src/scripts/programs/reverse.js';
+import { reverse } from '../src/scripts/node/reverse.js';
 
 const launch = () => {
   const value = readlineSync.question('Input string ');
