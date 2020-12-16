@@ -1,6 +1,18 @@
 // 9. Форматированное время
 
-export const formattedTime = (num) => {
+const formattedTime = (num) => {
+  if (Number.isNaN(num)) {
+    return 'Вы ввели неверное значение';
+  }
+
+  if (num - Math.round(num) !== 0) {
+    return 'Вы ввели дробное число';
+  }
+
+  if (num < 0) {
+    return 'Вы ввели отрицательное число';
+  }
+
   const numHours = Math.floor((num % 1440) / 60);
   const numMinutes = num % 60;
   let stringHours = '';
@@ -15,4 +27,9 @@ export const formattedTime = (num) => {
   return `${stringHours}:${stringMinutes}`;
 };
 
-export default { formattedTime };
+// eslint-disable-next-line no-unused-vars
+const getResult = () => {
+  const formInput = document.forms.program;
+  const a = parseFloat(formInput.a.value);
+  document.getElementById('result').textContent = formattedTime(a);
+};
