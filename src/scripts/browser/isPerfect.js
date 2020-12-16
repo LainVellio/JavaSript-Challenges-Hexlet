@@ -1,6 +1,18 @@
 // 12. Идеальные числа
 
-export const isPerfect = (num) => {
+const isPerfect = (num) => {
+  if (Number.isNaN(num)) {
+    return 'Вы ввели неверное значение';
+  }
+
+  if (num - Math.round(num) !== 0) {
+    return 'Вы ввели дробное число';
+  }
+
+  if (num < 0) {
+    return 'Вы ввели отрицательное число';
+  }
+
   let result = 1;
   for (let i = 2; i <= num / 2; i += 1) {
     if (num % i === 0) {
@@ -8,9 +20,14 @@ export const isPerfect = (num) => {
     }
   }
   if (result === num) {
-    return true;
+    return 'Совершенное число';
   }
-  return false;
+  return 'Обычное число';
 };
 
-export default { isPerfect };
+// eslint-disable-next-line no-unused-vars
+const getResult = () => {
+  const formInput = document.forms.program;
+  const a = parseFloat(formInput.a.value);
+  document.getElementById('result').textContent = isPerfect(a);
+};
