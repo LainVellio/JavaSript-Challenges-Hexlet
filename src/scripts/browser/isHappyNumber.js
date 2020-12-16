@@ -8,15 +8,32 @@ const sumOfsquareDigits = (num) => {
   return result;
 };
 
-export const isHappyNumber = (num) => {
+const isHappyNumber = (num) => {
+  if (Number.isNaN(num)) {
+    return 'Вы ввели неверное значение';
+  }
+
+  if (num - Math.round(num) !== 0) {
+    return 'Вы ввели дробное число';
+  }
+
+  if (num < 0) {
+    return 'Вы ввели отрицательное число';
+  }
+
   let result = num;
   for (let i = 0; i !== 9; i += 1) {
     if (result === 1) {
-      return true;
+      return 'Число счастливое';
     }
     result = sumOfsquareDigits(result);
   }
-  return false;
+  return 'Число обычное';
 };
 
-export default { isHappyNumber };
+// eslint-disable-next-line no-unused-vars
+const getResult = () => {
+  const formInput = document.forms.program;
+  const a = parseFloat(formInput.a.value);
+  document.getElementById('result').textContent = isHappyNumber(a);
+};
