@@ -55,6 +55,7 @@ p {
 .menu {
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .card {

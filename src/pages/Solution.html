@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+
+        <script src="../scripts/browser/solution.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Без двух нулей</title>
+
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Без двух нулей</h1>
+            </header>
+            <main>
+                <p>Определим все способы размещения двух нулей и двух единиц. 
+                    Существует шесть возможных способов размещения: 0011, 0101, 0110, 1001, 1010, 1100. 
+                    В трех случаях содержится два нуля, идущих подряд: 0011, 1001 и 1100. 
+                    Вычитаем их из общего числа и получаем три возможных способа: 0101, 0110 и 1010</p>
+                <p><strong>Программа принимает на вход количество нулей и единиц. Затем выводит все возможные 
+                    комбинации их перестановок, а так же количество комбинаций где нет двух нулей 
+                    идущих подряд</strong></p>
+                
+                <form name="program">
+                    <input class="input-1" name="a" placeholder="Введите количество нулей" />
+                    <input class="input-1" name="b" placeholder="Введите количество единиц" />
+                    <input class="button" type="button" value="Выполнить"  onclick="getResult()" />
+                </form>
+            </main>
+            <section class="result">
+                <h2>Результат</h2>
+                <div id="result"></div>
+                <a class="back" href="../../index.html">Вернуться в меню программ</a>
+            </section>
+            <section>
+               
+            </section>
+        </div>
+    </body>
+</html>
