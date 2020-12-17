@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <script src="../scripts/browser/ackermannFunction.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <head>
+    <title>Функция Аккермана</title>
 
-        <script src="../scripts/browser/ackermannFunction.js"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Функция Аккермана</h1>
+      </header>
+      <main>
+        <p>
+          Функция Аккермана — простой пример вычислимой функции, которая не
+          является примитивно рекурсивной.
+        </p>
+        <p>
+          Она обозначается A(m,n), принимает два неотрицательных целых числа в
+          качестве параметров и возвращает натуральное число. Эта функция растёт
+          очень быстро, например, число A(4,4) настолько велико, что количество
+          цифр в порядке этого числа многократно превосходит количество атомов в
+          наблюдаемой части Вселенной.
+        </p>
+        <p>
+          Функция Аккермана определяется рекурсивно для неотрицательных целых
+          чисел m и n следующим образом:
+        </p>
+        <p>
+          <img src="../images/image_ackermann.png" alt="Функция Аккермана" />
+        </p>
+        <p><strong>Программа расчитывает функцию Аккермана</strong></p>
 
-        <title>Функция Аккермана</title>
-
-        <link rel="stylesheet" href="../styles/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1>Функция Аккермана</h1>
-            </header>
-            <main>
-                <p>Функция Аккермана — простой пример вычислимой функции, которая не является примитивно рекурсивной.</p>
-                <p>Она обозначается A(m,n), принимает два неотрицательных целых числа в качестве параметров и 
-                    возвращает натуральное число. Эта функция растёт очень быстро, например, число A(4,4) 
-                    настолько велико, что количество цифр в порядке этого числа многократно превосходит 
-                    количество атомов в наблюдаемой части Вселенной.</p>
-                <p>Функция Аккермана определяется рекурсивно для неотрицательных целых чисел m и n следующим образом:</p>
-                <p><img src="../images/image_ackermann.png" alt="Функция Аккермана"></p>
-                <p><strong>Программа расчитывает функцию Аккермана</strong></p>
-              
-
-              
-                <form name="program">
-                    <input class="input-1" name="a" placeholder="Введите значение m" />
-                    <input class="input-2" name="b" placeholder="Введите значение n" />
-                    <input class="button" type="button" value="Выполнить"  onclick="getResult()" />
-                </form>
-            </main>
-            <section class="result">
-                <h2>Результат</h2>
-                <div id="result"></div>
-                <a class="back" href="../../index.html">Вернуться в меню программ</a>
-            </section>
-            <section>
-               
-            </section>
-        </div>
-    </body>
+        <form name="program">
+          <input class="input-1" name="a" placeholder="Введите значение m" />
+          <input class="input-2" name="b" placeholder="Введите значение n" />
+          <input
+            class="button"
+            type="button"
+            value="Выполнить"
+            onclick="getResult()"
+          />
+        </form>
+      </main>
+      <section class="result">
+        <h2>Результат</h2>
+        <div id="result"></div>
+        <a class="back" href="../../index.html">Вернуться в меню программ</a>
+      </section>
+      <section></section>
+    </div>
+  </body>
 </html>

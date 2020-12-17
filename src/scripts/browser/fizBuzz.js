@@ -5,7 +5,10 @@ const fizzBuzz = (beginNum, endNum) => {
     return 'Вы ввели неверное значение';
   }
 
-  if (beginNum - Math.round(beginNum) !== 0 || endNum - Math.round(endNum) !== 0) {
+  if (
+    beginNum - Math.round(beginNum) !== 0 ||
+    endNum - Math.round(endNum) !== 0
+  ) {
     return 'Вы ввели дробное число';
   }
 

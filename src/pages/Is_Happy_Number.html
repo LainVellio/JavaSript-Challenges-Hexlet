@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <script src="../scripts/browser/isHappyNumber.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <head>
+    <title>Счастливые числа</title>
 
-        <script src="../scripts/browser/isHappyNumber.js"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Счастливые числа</h1>
+      </header>
+      <main>
+        <p>
+          Назовем счастливыми числами те, которые в результате ряда
+          преобразований вида "сумма квадратов цифр" превратятся в единицу.
+          Например:
+        </p>
+        <p>
+          7 => 7&sup2; = 49, <br />49 => 4&sup2; + 9&sup2; = 16 + 81 = 97,
+          <br />97 => 9&sup2; + 7&sup2; = 81 + 49 = 130, <br />130 => 1&sup2; +
+          3&sup2; + 0&sup2; = 10, <br />10 => 1&sup2; + 0&sup2; = 1.
+        </p>
+        <p>Вывод: исходное число 7 - счастливое.</p>
+        <p>
+          <strong
+            >Программа проверяет является ли число счастливым или обычным.
+            Количество итераций процесса поиска ограниченно десятью</strong
+          >
+        </p>
 
-        <title>Счастливые числа</title>
-
-        <link rel="stylesheet" href="../styles/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1>Счастливые числа</h1>
-            </header>
-            <main>
-                <p>Назовем счастливыми числами те, которые в результате ряда преобразований
-                    вида "сумма квадратов цифр" превратятся в единицу. Например:</p>
-                    <p>7   => 7&sup2; = 49,
-                        <br>49  => 4&sup2; + 9&sup2; = 16 + 81 = 97,
-                        <br>97  => 9&sup2; + 7&sup2; = 81 + 49 = 130,
-                        <br>130 => 1&sup2; + 3&sup2; + 0&sup2; = 10,
-                        <br>10  => 1&sup2; + 0&sup2; = 1.
-                    </p>
-                <p>Вывод: исходное число 7 - счастливое.</p>
-                <p><strong>Программа проверяет является ли число счастливым или обычным.
-                    Количество итераций процесса поиска ограниченно десятью</strong></p>
-                
-                <form name="program">
-                    <input class="input-1" name="a" placeholder="Введите номер билета" />
-                    <input class="button" type="button" value="Выполнить"  onclick="getResult()" />
-                </form>
-            </main>
-            <section class="result">
-                <h2>Результат</h2>
-                <div id="result"></div>
-                <a class="back" href="../../index.html">Вернуться в меню программ</a>
-            </section>
-            <section>
-               
-            </section>
-        </div>
-    </body>
+        <form name="program">
+          <input class="input-1" name="a" placeholder="Введите номер билета" />
+          <input
+            class="button"
+            type="button"
+            value="Выполнить"
+            onclick="getResult()"
+          />
+        </form>
+      </main>
+      <section class="result">
+        <h2>Результат</h2>
+        <div id="result"></div>
+        <a class="back" href="../../index.html">Вернуться в меню программ</a>
+      </section>
+      <section></section>
+    </div>
+  </body>
 </html>

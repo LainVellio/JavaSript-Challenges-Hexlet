@@ -2,7 +2,8 @@ body {
     margin: 0px;
 }
 
-h1, h2 {
+h1,
+h2 {
     margin: 0px;
 }
 
@@ -63,7 +64,7 @@ p {
     padding: 20px 2%;
     font-family: Arial, sans-serif;
     color: #0a0a0a;
-    background-color:#f8f4ff;
+    background-color: #f8f4ff;
     text-align: center;
     line-height: 1.2em;
     font-weight: 400;
@@ -73,7 +74,7 @@ p {
 
 .card:hover {
     color: #f8f4ff;
-    background-color:#320a18;
+    background-color: #320a18;
 }
 
 form {
@@ -147,7 +148,7 @@ footer p {
     color: #332f2c;
     text-align: center;
     font-size: 14px;
-    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));  
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 #result {
@@ -173,7 +174,7 @@ footer p {
     padding: 10px 10px;
     font-family: Arial, sans-serif;
     color: #0a0a0a;
-    background-color:#f8f4ff;
+    background-color: #f8f4ff;
     line-height: 1.2em;
     font-weight: 400;
     font-size: 16px;
@@ -199,14 +200,12 @@ li {
         margin: 0px auto;
     }
 
-    
     h1 {
         font-size: 36px;
         padding: 15px 0px;
     }
 
     h2 {
-        
         font-size: 30px;
         padding: 15px 0px;
     }
@@ -257,21 +256,17 @@ li {
         margin-bottom: 15px;
         border: 1px solid black;
     }
-
 }
 
 @media only screen and (max-width: 660px) {
-
     .input-1 {
         width: 45%;
     }
 
     .input-2 {
-        width: 45%; 
+        width: 45%;
     }
 }
-
-
 
 @media only screen and (max-width: 425px) {
     h1 {
@@ -296,11 +291,10 @@ li {
     form {
         margin-left: 0;
         margin-right: 0;
-
     }
 
     .button {
-      font-size: 12px;
+        font-size: 12px;
     }
 
     #result {
@@ -308,8 +302,7 @@ li {
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 10px;
-  }
-
+    }
 
     .input-1 {
         width: 100%;

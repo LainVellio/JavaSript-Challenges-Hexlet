@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <script src="../scripts/browser/formattedTime.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <head>
+    <title>Форматированное время</title>
 
-        <script src="../scripts/browser/formattedTime.js"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Форматированное время</h1>
+      </header>
+      <main>
+        <p>
+          <strong
+            >Программа принимает на вход количество минут (прошедших с начала
+            суток) и возвращает строку, являющуюся временем в формате чч:мм.
+            Если количество минут содержит больше 24 часов (1 суток), то функция
+            возвращает время прошедшее с полуночи последних суток.</strong
+          >
+        </p>
 
-        <title>Форматированное время</title>
-
-        <link rel="stylesheet" href="../styles/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1>Форматированное время</h1>
-            </header>
-            <main>
-                <p><strong>Программа принимает на вход количество минут (прошедших с начала суток) и 
-                    возвращает строку, являющуюся временем в формате чч:мм. Если количество минут 
-                    содержит больше 24 часов (1 суток), то функция возвращает время прошедшее 
-                    с полуночи последних суток.</strong></p>
-                
-                <form name="program">
-                    <input class="input-1" name="a" placeholder="Введите количество минут" />
-                    <input class="button" type="button" value="Выполнить"  onclick="getResult()" />
-                </form>
-            </main>
-            <section class="result">
-                <h2>Результат</h2>
-                <div id="result"></div>
-                <a class="back" href="../../index.html">Вернуться в меню программ</a>
-            </section>
-            <section>
-               
-            </section>
-        </div>
-    </body>
+        <form name="program">
+          <input
+            class="input-1"
+            name="a"
+            placeholder="Введите количество минут"
+          />
+          <input
+            class="button"
+            type="button"
+            value="Выполнить"
+            onclick="getResult()"
+          />
+        </form>
+      </main>
+      <section class="result">
+        <h2>Результат</h2>
+        <div id="result"></div>
+        <a class="back" href="../../index.html">Вернуться в меню программ</a>
+      </section>
+      <section></section>
+    </div>
+  </body>
 </html>

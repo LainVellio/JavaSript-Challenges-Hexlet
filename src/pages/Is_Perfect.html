@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <script src="../scripts/browser/isPerfect.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <head>
+    <title>Идеальные числа</title>
 
-        <script src="../scripts/browser/isPerfect.js"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Идеальные числа</h1>
+      </header>
+      <main>
+        <p>
+          Совершенное число — положительное целое число, равное сумме его
+          положительных делителей (не считая само число). Например, 6 —
+          идеальное число, потому что 6 = 1 + 2 + 3.
+        </p>
+        <p>
+          <strong
+            >Программа проверяет является ли число совершенным или
+            обычным</strong
+          >
+        </p>
 
-        <title>Идеальные числа</title>
-
-        <link rel="stylesheet" href="../styles/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1>Идеальные числа</h1>
-            </header>
-            <main>
-                <p>Совершенное число — положительное целое число, равное сумме его 
-                    положительных делителей (не считая само число). 
-                    Например, 6 — идеальное число, потому что 6 = 1 + 2 + 3.</p>
-                <p><strong>Программа проверяет является ли число совершенным или обычным</strong></p>
-                
-                <form name="program">
-                    <input class="input-1" name="a" placeholder="Введите число" />
-                    <input class="button" type="button" value="Выполнить"  onclick="getResult()" />
-                </form>
-            </main>
-            <section class="result">
-                <h2>Результат</h2>
-                <div id="result"></div>
-                <a class="back" href="../../index.html">Вернуться в меню программ</a>
-            </section>
-            <section>
-               
-            </section>
-        </div>
-    </body>
+        <form name="program">
+          <input class="input-1" name="a" placeholder="Введите число" />
+          <input
+            class="button"
+            type="button"
+            value="Выполнить"
+            onclick="getResult()"
+          />
+        </form>
+      </main>
+      <section class="result">
+        <h2>Результат</h2>
+        <div id="result"></div>
+        <a class="back" href="../../index.html">Вернуться в меню программ</a>
+      </section>
+      <section></section>
+    </div>
+  </body>
 </html>

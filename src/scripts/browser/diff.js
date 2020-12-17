@@ -4,13 +4,20 @@ const diff = (firstCorner, secondCorner) => {
   if (Number.isNaN(firstCorner) || Number.isNaN(secondCorner)) {
     return 'Вы ввели не численное значение';
   }
-  if (firstCorner < 0 || firstCorner > 360 || secondCorner < 0 || secondCorner > 360) {
+  if (
+    firstCorner < 0 ||
+    firstCorner > 360 ||
+    secondCorner < 0 ||
+    secondCorner > 360
+  ) {
     return 'Углы не находятся в дипазоне от 0 до 360';
   }
+
   const diffCorner = secondCorner - firstCorner;
   if (diffCorner <= 180) {
     return diffCorner;
-  } return 360 - diffCorner;
+  }
+  return 360 - diffCorner;
 };
 
 // eslint-disable-next-line no-unused-vars

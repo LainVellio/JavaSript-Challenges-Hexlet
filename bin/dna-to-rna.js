@@ -6,7 +6,12 @@
 // eslint-disable-next-line import/extensions
 import { dnaToRna } from '../src/scripts/node/dnaToRna.js';
 
-const tests = [['ACGTGGTCTTAA', 'UGCACCAGAAUU'], ['CCGTA', 'GGCAU'], ['', ''], ['ACNTG', null]];
+const tests = [
+  ['ACGTGGTCTTAA', 'UGCACCAGAAUU'],
+  ['CCGTA', 'GGCAU'],
+  ['', ''],
+  ['ACNTG', null],
+];
 
 function main() {
   // eslint-disable-next-line no-restricted-syntax
@@ -20,7 +25,7 @@ function main() {
     // console.log(`Answer: ${answer}`);
     // console.log(`Result: ${result}`);
     console.log(`Passsed: ${isPassed}`);
-  // console.log('---');
+    // console.log('---');
   }
 }
 

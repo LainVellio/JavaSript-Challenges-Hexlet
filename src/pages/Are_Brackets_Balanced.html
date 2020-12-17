@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <script src="../scripts/browser/areBracketsBalanced.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <head>
+    <title>Сбалансированы ли скобки?</title>
 
-        <script src="../scripts/browser/areBracketsBalanced.js"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Сбалансированы ли скобки?</h1>
+      </header>
+      <main>
+        <p>
+          Скобки — это парные структуры. У каждой открывающей скобки должна быть
+          соответствующая ей закрывающая скобка.
+        </p>
+        <p>
+          В сбалансированной строке со скобками, количество открывающих скобок
+          должно быть равно количеству закрывающих. Закрывающая скобка не должна
+          идти впереди открывающей.
+        </p>
+        <p>Корректной считается строка со сбалансироваными круглыми скобками</p>
+        <p>
+          <strong
+            >Программа принимает на вход строку состоящую из одних открывающих и
+            закрывающих круглых скобок и проверяет является ли она
+            корректной.</strong
+          >
+        </p>
 
-        <title>Сбалансированы ли скобки?</title>
-
-        <link rel="stylesheet" href="../styles/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1>Сбалансированы ли скобки?</h1>
-            </header>
-            <main>
-                <p>Скобки — это парные структуры. У каждой открывающей скобки должна быть соответствующая ей закрывающая скобка.
-                <p>В сбалансированной строке со скобками, количество открывающих скобок должно быть равно количеству закрывающих. Закрывающая скобка не должна идти впереди открывающей.</p>
-                <p>Корректной считается строка со сбалансироваными круглыми скобками</p>
-                <p><strong>Программа принимает на вход строку состоящую из одних открывающих и закрывающих круглых скобок и проверяет является ли она корректной.</strong></p>
-                
-                <form name="program">
-                    <input class="input-1" name="a" placeholder="Введите стоку со скобками" />
-                    <input class="button" type="button" value="Выполнить"  onclick="getResult()" />
-                </form>
-            </main>
-            <section class="result">
-                <h2>Результат</h2>
-                <div id="result"></div>
-                <a class="back" href="../../index.html">Вернуться в меню программ</a>
-            </section>
-            <section>
-               
-            </section>
-        </div>
-    </body>
+        <form name="program">
+          <input
+            class="input-1"
+            name="a"
+            placeholder="Введите стоку со скобками"
+          />
+          <input
+            class="button"
+            type="button"
+            value="Выполнить"
+            onclick="getResult()"
+          />
+        </form>
+      </main>
+      <section class="result">
+        <h2>Результат</h2>
+        <div id="result"></div>
+        <a class="back" href="../../index.html">Вернуться в меню программ</a>
+      </section>
+      <section></section>
+    </div>
+  </body>
 </html>

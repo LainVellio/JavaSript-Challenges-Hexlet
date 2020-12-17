@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <script src="../scripts/browser/sumSquareDifference.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <head>
+    <title>Сумма квадратов</title>
 
-        <script src="../scripts/browser/sumSquareDifference.js"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Сумма квадратов</h1>
+      </header>
+      <main>
+        <p>
+          Сумма квадратов первых десяти натуральных чисел это 12&sup2; +
+          22&sup2; + 32&sup2; + ... + 10&sup2; = 385. <br />Квадрат суммы первых
+          десяти натуральных чисел это (1 + 2 + 3 + ... + 10)&sup2; = 55&sup2; =
+          3025. <br />Разница между квадратом суммы и суммой квадратов первых
+          десяти натуральных чисел: 3025 − 385 = 2640.
+        </p>
+        <p>
+          <strong
+            >Программа вычисляет разницу между квадратом суммы и суммой
+            квадратов первых натуральных чисел от 1 до введенного числа.</strong
+          >
+        </p>
 
-        <title>Сумма квадратов</title>
-
-        <link rel="stylesheet" href="../styles/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <h1>Сумма квадратов</h1>
-            </header>
-            <main>
-                <p>Сумма квадратов первых десяти натуральных чисел это 12&sup2; + 22&sup2; + 32&sup2; + ... + 10&sup2; = 385.
-                <br>Квадрат суммы первых десяти натуральных чисел это (1 + 2 + 3 + ... + 10)&sup2; = 55&sup2; = 3025.
-                <br>Разница между квадратом суммы и суммой квадратов первых десяти натуральных чисел: 3025 − 385 = 2640.
-                </p>
-                <p><strong>Программа вычисляет разницу между квадратом суммы и суммой квадратов первых натуральных чисел от 1 до введенного числа.</strong></p>
-                
-                <form name="program">
-                    <input class="input-1" name="a" placeholder="Введите число" />
-                    <input class="button" type="button" value="Выполнить"  onclick="getResult()" />
-                </form>
-            </main>
-            <section class="result">
-                <h2>Результат</h2>
-                <div id="result"></div>
-                <a class="back" href="../../index.html">Вернуться в меню программ</a>
-            </section>
-            <section>
-               
-            </section>
-        </div>
-    </body>
+        <form name="program">
+          <input class="input-1" name="a" placeholder="Введите число" />
+          <input
+            class="button"
+            type="button"
+            value="Выполнить"
+            onclick="getResult()"
+          />
+        </form>
+      </main>
+      <section class="result">
+        <h2>Результат</h2>
+        <div id="result"></div>
+        <a class="back" href="../../index.html">Вернуться в меню программ</a>
+      </section>
+      <section></section>
+    </div>
+  </body>
 </html>

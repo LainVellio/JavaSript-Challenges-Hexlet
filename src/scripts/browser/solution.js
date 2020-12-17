@@ -44,7 +44,10 @@ const solution = (numZero, numOne) => {
     return 'Вы ввели неверное значение';
   }
 
-  if (numZero - Math.round(numZero) !== 0 || numOne - Math.round(numOne) !== 0) {
+  if (
+    numZero - Math.round(numZero) !== 0 ||
+    numOne - Math.round(numOne) !== 0
+  ) {
     return 'Вы ввели дробное число';
   }
 
@@ -75,10 +78,16 @@ const solution = (numZero, numOne) => {
       }
     }
 
-    if (numOne === 1) { break; }
+    if (numOne === 1) {
+      break;
+    }
     const leftStr = currentStr.slice(0, indexCut(currentStr) + 1);
     const rightStr = currentStr.slice(indexCut(currentStr) + 1);
-    currentStr = paste(shift(leftStr, indexRightOne(leftStr)), rightStr, indexRightOne(leftStr));
+    currentStr = paste(
+      shift(leftStr, indexRightOne(leftStr)),
+      rightStr,
+      indexRightOne(leftStr),
+    );
     result[i] = ` ${currentStr}`;
     i += 1;
     if (isTwoZero(currentStr)) {
